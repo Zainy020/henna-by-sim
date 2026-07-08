@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Henna Bedrijf - Beta versie</title>
+  <title>simply henna - by sim</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,13 +20,16 @@
       font-weight: bold;
       font-size: 1rem;
     }
-    nav {
-      background-color: #ffb3d9;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
+nav{
+    background:#ffb3d9;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
     nav a {
       color: #660033;
       text-decoration: none;
@@ -39,18 +42,131 @@
     nav a:hover {
       color: #cc0066;
     }
-    section {
-      display: none;
-      padding: 20px;
-      max-width: 900px;
-      margin: 20px auto;
-      background-color: #ffe6f0;
-      border-radius: 8px;
-      box-shadow: 0 0 8px #ffb3d9;
-    }
-    section.active {
-      display: block;
-    }
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin:0;
+}
+
+.hero p{
+    font-size:24px;
+    margin:20px 0 35px;
+}
+
+.button{
+    background:#ff66aa;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#cc0066;
+}
+
+.about{
+    text-align:center;
+    margin-top:70px;
+}
+
+.about h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.card h3{
+    margin:15px 0;
+    color:#cc0066;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+@media (max-width:768px){
+
+.hero{
+    height:70vh;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about h2{
+    font-size:30px;
+}
+
+.about p{
+    font-size:16px;
+}
+
+.button{
+    padding:12px 25px;
+}
+
+}
     footer {
       background-color: #ff66aa;
       color: white;
@@ -95,762 +211,127 @@
 </head>
 <body>
   <header>
-    <div>NIEUWE UPDATE: beta versie 2.0 | let op de officiële website wordt 9 juni 2025 gelanceerd</div>
+    <div>NIEUWE UPDATE: beta versie 3.0 | let op de officiële website wordt 9 juli 2026 gelanceerd</div>
   </header>
+  
+<nav>
+    <a href="#home">Home</a>
+    <a href="#prijzen">prijzen</a>
+    <a href="#boeken">boeken</a>
+    <a href="#team">Ons team</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="https://jouw-rooster-website.nl" target="_blank">medewerkers Portal</a>
+</nav>
+  <section id="home">
 
-  <nav>
-    <a onclick="openTab('home')">Home</a>
-    <a onclick="openTab('rooster-zainyhuidigeweek')">rooster management huidige week</a>
-    <a onclick="openTab('rooster-simhuidigeweek')">rooster huidige week - simran</a>
-    <a onclick="openTab('designs')">Designs</a>
-    <a onclick="openTab('lancering')">Lancering</a>
-    <a onclick="openTab('updates')">Updates</a>
-    <a onclick="openTab('medewerkers')">Medewerkers</a>
-    <a onclick="openTab('boeken')">Boeken</a>
-    <a onclick="openTab('faq')">FAQ</a>
-    <a onclick="openTab('report')">Report Problems</a>
-    <a onclick="openTab('socials')">Socials</a>
-    <a onclick="openTab('prijzen')">prijzen</a>
-    <a onclick="openTab('revieuws')">revieuws</a>
-  </nav>
-  <section id="prijzen">
-   <li>LET OP ER KUNNEN VERANDERINGEN AANGEBRACHT WORDEN VOOR DE RELEASE 9 juni 2025</li>
-    <li>1 hand: normaal 15 euro nu 10 euro</li>
-    <li>2 handen: normaal 30 euro nu 20 euro</li>
-    <li>anders (vraag aan! mail managementsimranhenna@gmail.com/socials)</li>
-
-      </section>
-    <section id="revieuws">
-    <h2>amira</h2>
-    <h3>4/5</h3>
-    <p>ik vindt de bloemetjes op mn hand heel leuk!</p>   
-    <h2>yousra</h2>
-    <h3>4,5/5</h3>
-    <p>ik ben heel blij met de prijzen!</p>   
-    <h2>julie</h2>
-    <h3>5/5</h3>
-    <p>Simran heeft een heel groot talent! ik kom hier vaker</p>
-    <h2>Soufyan</h2>
-    <h3>4,5</h3>
-    <p>Ik ben heel blij dat mijn 2e vrouw zo'n mooie henna heeft</p>
-    <h2>Rasha Khann</h2>
-    <h3>5/5</h3>
-    <p>Rasha is altijd blij met Simrans henna</p>
-    <h2>Hanane</h2>
-    <h3>5/5</h3>
-    <p>de koffie was heel lekker gedaan de henna ook</p>
-    </section>
-  <section id="home" class="active">
-    <h2>Simrans verhaal</h2>
-    <p>Het Verhaal Achter Simran’s Henna Talent
-
-Simran tekent al zo lang ze zich kan herinneren. Niet alleen op papier, maar op alles wat ze kon vinden: schoolschriften, hoekjes van tafels, servetten – en het allerliefst op haar eigen hand. Haar favoriete dingen om te tekenen? Bloemen. Rozen, zonnebloemen, fantasiebloemen die niemand kende behalve zij. Die bloemen vertelden haar verhaal zonder woorden. Maar niemand keek er echt naar.
-
-Simran had een tweelingzus die ook goed kon tekenen, en iedereen zei altijd: “Je zus is zó getalenteerd.” Simran glimlachte dan, maar diep vanbinnen voelde ze zich over het hoofd gezien. Ze bleef echter tekenen, voor zichzelf, in stilte. Tot op een dag alles veranderde — door één simpel telefoongesprek.
-
-Ze belde met Zainy, een goede vriend van haar. Ze spraken over alles en niets, tot ze spontaan vertelde dat ze bloemen op haar hand had getekend met een zwarte pen. “Stuur eens een foto,” zei Zainy. Even later kreeg hij het beeld binnen en reageerde direct: “Sim… dit lijkt op henna. Serieus, je moet hier iets mee doen.”
-
-Die woorden bleven hangen.
-
-Simran had er nooit aan gedacht dat haar stijl overeenkwam met henna. Maar toen ze beter keek naar de krullen, de bloempatronen, de manier waarop ze lijnen trok, begon het te dagen. Ze kocht haar eerste henna-cone en probeerde wat simpele designs op haar hand. En het voelde goed. Natuurlijk. Als iets wat ze altijd al had moeten doen.
-
-Zainy bleef haar aanmoedigen. Hij zei: “Laat mij je manager worden, ik geloof in dit.” Wat begon als een grap, werd een echte samenwerking. Hij hielp haar met het bedenken van een naam, het opzetten van een Instagram-account en later ook deze website. Terwijl Simran zich verdiepte in de kunst van henna — van ingrediënten tot technieken — zorgde Zainy dat mensen haar werk konden zien.
-
-Simran's eerste klanten waren familie en vrienden, maar al snel kwamen er aanvragen van buitenaf. Mensen begonnen haar unieke stijl te herkennen: sierlijk, bloemrijk en vol betekenis. Haar henna is niet zomaar versiering — het vertelt een verhaal, haar verhaal.
-
-Vandaag is Simran een geliefde henna-artiest. Wat begon als een tekening op haar hand en een telefoontje met een vriend, is uitgegroeid tot een bloeiend bedrijf. En Zainy? Hij is nog steeds haar manager — met evenveel passie als op dag één.
-
-Deze website is meer dan een portfolio of boekingspagina. Het is het bewijs dat talent, vertrouwen en vriendschap iets groots kunnen opleveren. Elk design dat je hier ziet, begon ooit als een droom. En jij bent nu onderdeel van die droom.
-
-Welkom bij Simran’s Henna Wereld. Alles begon met een bloem… en een telefoontje.</p>
-  </section>
-        
-<section id="rooster-simhuidigeweek">
-  <h2>Week 24</h2>
-    <p>rooster van Simran!</p>
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Ga naar Rooster</title>
-  <style>
-    .knop {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff66aa;
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .knop:hover {
-      background-color: #cc0066;
-    }
-  </style>
-</head>
-<body>
-
-  <a class="knop" href="https://zainy020.github.io/Rooster/" target="_blank">
-    Ga naar de officele website van het rooster!
-  </a>
-
-</body>
-</html>
-    
-    <table>
-      <thead>
-        <tr>
-          <th>Tijd</th>
-          <th>Maandag</th>
-          <th>Dinsdag</th>
-          <th>Woensdag</th>
-          <th>Donderdag</th>
-          <th>Vrijdag</th>
-          <th>Zaterdag</th>
-          <th>Zondag</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>12:00 - 13:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>13:00 - 14:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>14:00 - 15:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>15:00 - 16:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>16:00 - 17:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>17:00 - 18:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>18:00 - 19:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>19:00 - 20:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>20:00 - 21:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>21:00 - 22:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td></tr>
-        <tr>
-            <td>22:00 - 23:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>23:00 - 00:00</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>
-<td style="background-color: Gray;">*N/A</td>  
-<td style="background-color: Gray;">*N/A</td>
-        </tr>
-      </tbody>
-    </table>   
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-  <section id="rooster-zainyhuidigeweek">
-    <p>Rooster van het mananagement </p>
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Ga naar Rooster</title>
-  <style>
-    .knop {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff66aa;
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .knop:hover {
-      background-color: #cc0066;
-    }
-  </style>
-</head>
-<body>
-
-  <a class="knop" href="https://zainy020.github.io/Rooster/" target="_blank">
-    Ga naar de officele website van het rooster!
-  </a>
-
-</body>
-</html>
-        <table>
-      <thead>
-        <tr>
-          <th>Tijd</th>
-          <th>Maandag</th>
-          <th>Dinsdag</th>
-          <th>Woensdag</th>
-          <th>Donderdag</th>
-          <th>vrijdag</th>
-          <th>Zaterdag</th>
-          <th>Zondag</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>12:00 - 13:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>13:00 - 14:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-        </tr>
-        <tr>
-            <td>14:00 - 15:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>            <td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(als nodig</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)</td>   
-        </tr>
-        <tr>
-            <td>15:00 - 16:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(als nodig</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)</td>
-        </tr>
-        <tr>
-            <td>16:00 - 17:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(als nodig</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)</td>
-        </tr>
-        <tr>
-            <td>17:00 - 18:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(als nodig</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)</td>
-        </tr>
-        <tr>
-            <td>18:00 - 19:00</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*--- --- ---</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>
-        </tr>
-        <tr>
-            <td>19:00 - 20:00</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*--- --- ---</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>
-        </tr>
-        <tr>
-            <td>21:00 - 22:00</td>
-            <td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*ABSENT</td>
-<td style="background-color: red;">*--- --- ---</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>
-<td style="background-color: red;">*Nietbeschikbaar</td>            </tr>
-        <tr>
-            <td>22:00 - 23:00</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-        </tr>
-        <tr>
-            <td>23:00 - 00:00</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: gray;">*N/A</td>
-<td style="background-color: white;">E I D M U B A R A K</td>
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-<td style="background-color: orange;">*beschikbaar(Als nodig)
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section id="updates">
-    <h2>Updates</h2>
-    <ul>
-      <li>Website beta versie 2.0 is nu live.</li>
-      <li>Officiële lancering gepland voor 8 juni 2025.</li>
-      <li>Rooster 22 geupdate</li>
-      <li>Rooster 24 staat er op</li>
-      <li>Simrans verhaal is nu bekend</li>
-        <li>je kan nu een afspraak boeken (check week 24 voor de plekken)</li>
-        <li>Simran 12 juni absent</li>
-        <li>praat nu met onze leuke AI chatbot (FAQ)</li>
-        <li>meld nu problemen</li>
-        <li>volg nu onze socials</li>
-    </ul>
-  </section>
-
-  <section id="medewerkers">
-    <h2>Medewerkers</h2>
-    <ul>
-      <li>Simran - Hoofd designer</li>
-      <li>Zainy - management, Website & socials</li>
-    </ul>
-  </section>
-
-  <section id="boeken">
-    <h2>Boeken</h2>
-    <p>Stuur een bericht naar onze socials of klik op de link!</p>
-    <a href="https://forms.gle/BCB4Vyb6PGuDf98f8" target="_blank">
-  <button>klik hier om een afspraak teboeken</button>
-</a>
-
-  </section>
-
-  <section id="faq">
-    <h2>FAQ</h2>
-    <p>Veelgestelde vragen worden hier binnenkort toegevoegd.</p>
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Chatbot Henna & Small Talk</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-  body {
-    background: #f0f4f8;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-  }
-  #chatContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    overflow: hidden;
-  }
-  #messages {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    background: linear-gradient(135deg, #ffefba, #ffffff);
-  }
-  .user, .bot {
-    max-width: 75%;
-    margin-bottom: 14px;
-    padding: 14px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 1.4;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    word-wrap: break-word;
-  }
-  .user {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    align-self: flex-end;
-    border-bottom-right-radius: 4px;
-  }
-  .bot {
-    background: #e2e8f0;
-    color: #2d3748;
-    align-self: flex-start;
-    border-bottom-left-radius: 4px;
-  }
-  #inputArea {
-    display: flex;
-    padding: 16px 20px;
-    background: #edf2f7;
-    border-top: 1px solid #cbd5e0;
-  }
-  #userInput {
-    flex: 1;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 20px;
-    outline: none;
-    box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-  }
-  #userInput:focus {
-    box-shadow: inset 0 2px 8px rgba(37,117,252,0.7);
-  }
-  button {
-    margin-left: 12px;
-    background: #2575fc;
-    color: white;
-    border: none;
-    padding: 0 24px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    box-shadow: 0 6px 12px rgba(37,117,252,0.5);
-    transition: background-color 0.3s ease;
-  }
-  button:hover {
-    background: #1a5ede;
-    box-shadow: 0 8px 16px rgba(26,94,222,0.7);
-  }
-  button:active {
-    background: #134abf;
-    box-shadow: none;
-  }
-</style>
-</head>
-<body>
-<div id="chatContainer">
-  <div id="messages"></div>
-  <div id="inputArea">
-    <input id="userInput" type="text" placeholder="Typ je vraag hier..." autocomplete="off" />
-    <button onclick="sendQuestion()">Stuur</button>
-  </div>
-</div>
-
-<script>
-  const hennaQA = [
-    { q: "Wat is henna?", a: "Henna is een natuurlijke kleurstof gemaakt van de henna-plant, gebruikt om de huid en haren te versieren." },
-    { q: "Hoe lang blijft henna op de huid?", a: "Henna blijft meestal 1 tot 3 weken zichtbaar op de huid, afhankelijk van huidtype en verzorging." },
-    { q: "Hoe werkt henna?", a: "De kleurstoffen in henna dringen door in de bovenste huidlaag en geven een oranje tot roodbruine kleur." },
-    { q: "Is henna veilig voor de huid?", a: "Pure henna is over het algemeen veilig, maar vermijd zwarte henna omdat die schadelijke chemicaliën kan bevatten." },
-    { q: "Kan ik allergisch zijn voor henna?", a: "Ja, sommige mensen kunnen allergisch reageren. Doe altijd eerst een klein testplekje." },
-    { q: "Hoe bereid je henna voor gebruik?", a: "Henna-poeder wordt gemengd met water of citroensap tot een pasta, soms met suiker en etherische oliën." },
-    { q: "Hoe lang moet de henna op de huid blijven?", a: "Het beste is om de henna 4 tot 8 uur te laten zitten voor een diepe kleur." },
-    { q: "Soufyan", a:"Julies patron"}, 
-    { q: "Zainy", a:"niet beschikbaar, hij doet een koffietje met hanane en Rasha en sjakkelien"},
-    { q: "Kan henna op het haar gebruikt worden?", a: "Ja, henna wordt vaak gebruikt als natuurlijke haarkleur en conditioner." },
-    { q: "Wat is het verschil tussen rode en zwarte henna?", a: "Rode henna is natuurlijk en veilig; zwarte henna kan schadelijke stoffen bevatten en kan allergieën veroorzaken." },
-    { q: "Kan ik henna combineren met andere kleuren?", a: "Ja, maar test eerst op een klein stukje om onverwachte resultaten te voorkomen." },
-    { q: "Hoe verwijder ik henna?", a: "Henna vervaagt vanzelf; je kunt het versnellen door scrubben, maar het gaat niet meteen weg." },
-    { q: "Wat zijn populaire ontwerpen met henna?", a: "Bloemen, mandala’s, geometrische patronen en traditionele Arabische of Indiase motieven." },
-    { q: "Is henna geschikt voor kinderen?", a: "Ja, als je pure henna gebruikt zonder toegevoegde chemicaliën." },
-    { q: "Kan ik zelf henna aanbrengen?", a: "Ja, met oefening en de juiste materialen kun je thuis eenvoudige ontwerpen maken." },
-    { q: "Hoe bewaar ik henna poeder?", a: "Bewaar het op een koele, droge plek in een luchtdichte verpakking om versheid te behouden." },
-    { q: "Kan ik met een henna tattoo zwemmen?", a: "Het is beter om zwemmen te vermijden de eerste dag, zodat de kleur goed intrekt." },
-    { q: "Kan ik de kleur van mijn henna tattoo intensiveren?", a: "Ja, door de pasta nat te houden met citroensap en het langer te laten zitten." },
-    { q: "Is henna geschikt voor elk huidtype?", a: "Over het algemeen wel, maar doe altijd eerst een test voor gevoelige huid." },
-    { q: "Kan ik mijn henna tattoo versieren met glitters?", a: "Ja, nadat de henna opgedroogd is, kun je glitters of andere versieringen toevoegen." },
-    { q: "Hoe lang duurt het voordat de henna kleur volledig ontwikkeld is?", a: "De kleur ontwikkelt zich binnen 24 tot 48 uur na het verwijderen van de pasta." }
-  ];
-
-  const friendlyQA = [
-    { q: "Hoe gaat het met je?", a: "Goed, dank je! En met jou?" },
-    { q: "Wat is je favoriete kleur?", a: "Ik hou van blauw. En jij?" },
-    { q: "wie is simran?", a: "Ze is de henna artiest." },
-    { q: "wat is het verhaal achter simrans henna bedrijf?", a: "Bekijk de homepage." },
-    { q: "wanneer is simran beschikbaar?", a: "Ga naar de website, klik op het navigatiesysteem, klik op roosters, zoek een groen plekje (of een geel plekje 7 werkdagen van tevoren)." },
-    { q: "waar kan ik de designs zien?", a: "Ga naar de website, klik op het navigatiesysteem, klik op designs." },
-    { q: "wanneer wordt de website gelanceerd?", a: "15 juni 2025." },
-    { q: "rashakhann", a: "RASHRASH." },
-    { q: "souhayl", a: "Lik me bil" }, 
-    { q: "waar kan ik updates zien??", a: "Ga naar de website, klik op het navigatiesysteem, klik op updates." },
-    { q: "wie zijn de medewerkers?", a: "Simran en Zainy." },
-    { q: "ik wil een afspraak boeken", a: "Zie de details hier: ga naar de website, klik op het navigatiesysteem, klik op boeken." },
-    { q: "report problems", a: "Jammer dat er iets aan de hand is! Zie hier meer details: ga naar de website, klik op het navigatiesysteem, klik op Report problems." },
-    { q: "wat zijn jullie socials?", a: "S O O N." },
-    { 
-      q: "/help",
-      a: `Dit kan je allemaal vragen:
-1. Hoe gaat het met je?
-2. Wat is je favoriete kleur?
-3. Wie is Simran?
-4. Wat is het verhaal achter Simrans henna bedrijf?
-5. Wanneer is Simran beschikbaar?
-6. Waar kan ik de designs zien?
-7. Wanneer wordt de website gelanceerd?
-8. Rashakhann
-9. Waar kan ik updates zien?
-10. Wie zijn de medewerkers?
-11. Ik wil een afspraak boeken
-12. Report problems
-13. Wat zijn jullie socials?
-14. Wat is henna?
-15. Hoe lang blijft henna op de huid?
-16. Is henna veilig voor de huid?
-17. Hoe werkt henna?
-18. Kan ik allergisch zijn voor henna?
-19. Hoe bereid je henna voor gebruik?
-20. Hoe lang moet de henna op de huid blijven?
-21. Kan henna op het haar gebruikt worden?
-22. Wat is het verschil tussen rode en zwarte henna?
-23. Kan ik henna combineren met andere kleuren?
-24. Hoe verwijder ik henna?
-25. Wat zijn populaire ontwerpen met henna?
-26. Is henna geschikt voor kinderen?
-27. Kan ik zelf henna aanbrengen?
-28. Hoe bewaar ik henna poeder?
-29. Kan ik met een henna tattoo zwemmen?
-30. Kan ik de kleur van mijn henna tattoo intensiveren?
-31. Is henna geschikt voor elk huidtype?
-32. Kan ik mijn henna tattoo versieren met glitters?
-33. Hoe lang duurt het voordat de henna kleur volledig ontwikkeld is?`
-    }
-  ];
-
-  function findAnswer(question) {
-    const q = question.toLowerCase().trim();
-
-    // Zoek in friendlyQA eerst
-    let found = friendlyQA.find(item => item.q.toLowerCase() === q);
-    if (found) return found.a;
-
-    // Zoek in hennaQA
-    found = hennaQA.find(item => item.q.toLowerCase() === q);
-    if (found) return found.a;
-
-    return "Sorry, die vraag begrijp ik niet. Probeer iets anders of typ /help voor tips.";
-  }
-
-  function appendMessage(text, sender) {
-    const messages = document.getElementById("messages");
-    const msgDiv = document.createElement("div");
-    msgDiv.className = sender;
-    msgDiv.textContent = text;
-    messages.appendChild(msgDiv);
-    messages.scrollTop = messages.scrollHeight;
-  }
-
-  function sendQuestion() {
-    const input = document.getElementById("userInput");
-    const question = input.value;
-    if (!question.trim()) return;
-    appendMessage(question, "user");
-    input.value = "";
-
-    // Simuleer async antwoord met kleine vertraging
-    setTimeout(() => {
-      const answer = findAnswer(question);
-      appendMessage(answer, "bot");
-    }, 500);
-  }
-
-  // Enter key werkt ook om te sturen
-  document.getElementById("userInput").addEventListener("keydown", function(e){
-    if(e.key === "Enter") {
-      sendQuestion();
-      e.preventDefault();
-    }
-  });
-
-  // Welkomstbericht
-  window.onload = () => {
-    appendMessage("Hallo! Stel me een vraag over henna of typ /help voor een lijst met mogelijke vragen.", "bot");
-  };
-</script>
-</body>
-</html>
-
-  </button>
-  </section>
-
-  <section id="report">
-    <h2>Report Problems</h2>
-    <p>Heb je een probleem of fout gevonden? Laat het ons weten via onze socials of e-mail. Je kan ook op de knop klikken om een probleem te melden!!</p>
-    <li>managementsimranhenna@gmail.com</li>
-<a href="https://forms.gle/B953Rh3cqKYUznZL6" target="_blank">
-  <button>Report a problem</button>
-</a>
-
-
-  </section>
-
-  <section id="socials">
-    <h2>Socials</h2>
-    <p>Volg ons op sociale media voor de laatste updates en mooie foto’s van onze henna designs!</p>
-    <ul>
-      <li><a href="#" style="color:#cc0066;">TikTok: @Simrans.henna</a></li>
-<li>binnekort komen er meer socials!</li>
-    </ul>
-  </section>
-
-  <script>
-    function openTab(tabId) {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(sec => sec.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-    }
-
-    function updateCountdown() {
-      const launchDate = new Date('June 9, 2025 00:00:00').getTime();
-      const now = new Date().getTime();
-      const diff = launchDate - now;
-
-      if (diff <= 0) {
-        document.getElementById('countdown').innerHTML = "De officiële lancering is nu!";
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      document.getElementById('countdown').innerHTML =
-        days + " dagen " + hours + " uur " + minutes + " min " + seconds + " sec ";
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
-</body>
-</html>
+    <div class="hero">
+
+        <h1>Simply Henna</h1>
+
+        <p>Beautiful Henna For Every Occasion</p>
+
+        <a href="#boeken" class="button">✨ Boek nu</a>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Welkom bij Simply Henna 🤎</h2>
+
+        <p>
+            Welkom bij Simply Henna! Wij maken prachtige,
+            handgemaakte henna-designs voor iedere gelegenheid.
+            Of je nu een bruiloft, Eid, verjaardag, babyshower
+            of een ander feest hebt, wij zorgen voor een uniek
+            ontwerp dat perfect bij jou past.
+        </p>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Waarom kiezen voor Simply Henna?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                🌿
+                <h3>Natuurlijke Henna</h3>
+                <p>Wij gebruiken uitsluitend hoogwaardige natuurlijke henna.</p>
+            </div>
+
+            <div class="card">
+                🎨
+                <h3>Unieke Designs</h3>
+                <p>Ieder design wordt volledig met de hand gemaakt.</p>
+            </div>
+
+            <div class="card">
+                ⭐
+                <h3>Hoge Kwaliteit</h3>
+                <p>Wij nemen de tijd om elk detail perfect af te werken.</p>
+            </div>
+
+            <div class="card">
+                💖
+                <h3>Persoonlijke Service</h3>
+                <p>Wij luisteren naar jouw wensen voor het mooiste resultaat.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Perfect voor elke gelegenheid</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                💍
+                <h3>Bruiloften</h3>
+                <p>Elegante bridal henna voor jouw grote dag.</p>
+            </div>
+
+            <div class="card">
+                🌙
+                <h3>Eid</h3>
+                <p>Vier Eid met een prachtig traditioneel henna-design.</p>
+            </div>
+
+            <div class="card">
+                🎉
+                <h3>Feestjes</h3>
+                <p>Henna voor verjaardagen, festivals en evenementen.</p>
+            </div>
+
+            <div class="card">
+                ✨
+                <h3>Custom Designs</h3>
+                <p>Heb je een eigen idee? Wij maken het speciaal voor jou.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Klaar om te boeken?</h2>
+
+        <p>
+            Maak vandaag nog een afspraak en laat jouw handen
+            stralen met een prachtig henna-design van Simply Henna.
+        </p>
+
+        <br>
+
+        <a href="#boeken" class="button">📅 Maak een afspraak</a>
+
+    </div>
+
+</section>
+ 
