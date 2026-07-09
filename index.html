@@ -6,26 +6,168 @@
 <title>Simply Henna</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Poppins,sans-serif;background:#F7F1EB;color:#4E342E}
-header{background:#5C3A21;color:#fff;text-align:center;padding:10px;font-weight:600}
-nav{position:sticky;top:0;background:#fff;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:16px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
-nav a{text-decoration:none;color:#5C3A21;font-weight:600}
-nav a:hover{color:#8B5A2B}
-section{max-width:1100px;margin:auto;padding:70px 20px}
-.hero{height:85vh;border-radius:22px;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('hero.jpg');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff}
-.hero h1{font-size:68px}
-.hero p{font-size:24px;margin:18px 0 30px}
-.btn{background:#6F4E37;color:#fff;text-decoration:none;padding:15px 34px;border-radius:999px}
-.btn:hover{background:#4E342E}
-h2{text-align:center;margin-bottom:20px}
-.lead{max-width:760px;margin:0 auto 40px;text-align:center;line-height:1.8}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
-.card{background:#FFFDFB;border:1px solid #E8DDD2;border-radius:18px;padding:30px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.price{font-size:30px;color:#6F4E37;font-weight:700}
-footer{background:#5C3A21;color:#fff;text-align:center;padding:40px}
-@media(max-width:768px){.hero h1{font-size:42px}.hero p{font-size:18px}}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#F7F1EB;
+    color:#4E342E;
+}
+
+header{
+    background:#5C3A21;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-weight:600;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:16px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#5C3A21;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8B5A2B;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.hero{
+    height:85vh;
+    border-radius:22px;
+    background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:68px;
+}
+
+.hero p{
+    font-size:24px;
+    margin:18px 0 30px;
+}
+
+.btn{
+    background:#6F4E37;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 34px;
+    border-radius:999px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#4E342E;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.lead{
+    max-width:760px;
+    margin:0 auto 40px;
+    text-align:center;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#FFFDFB;
+    border:1px solid #E8DDD2;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.price{
+    font-size:30px;
+    font-weight:700;
+    color:#6F4E37;
+}
+
+footer{
+    background:#5C3A21;
+    color:#fff;
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        gap:12px;
+        padding:12px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
 </style>
 </head>
 <body>
