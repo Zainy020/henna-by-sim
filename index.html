@@ -110,7 +110,12 @@
     <a onclick="openTab('medeweb')">Medeweb/updates</a>
   </nav>
       </section>
-          
+
+  <section id="home" class="active">
+    <h1>Simply Henna</h1>
+    <p>Welkom bij Simply Henna!</p>
+</section>
+  
 <section id="medeweb">
 
 <!DOCTYPE html>
@@ -410,55 +415,5 @@ hier komt medewerkersweb/medeweb! voorheen rooster!  </a>
 
   </button>
   </section>
-
-  <section id="report">
-    <h2>Report Problems</h2>
-    <p>Heb je een probleem of fout gevonden? Laat het ons weten via onze socials of e-mail. Je kan ook op de knop klikken om een probleem te melden!!</p>
-    <li>managementsimranhenna@gmail.com</li>
-<a href="https://forms.gle/B953Rh3cqKYUznZL6" target="_blank">
-  <button>Report a problem</button>
-</a>
-
-
-  </section>
-
-  <section id="socials">
-    <h2>Socials</h2>
-    <p>Volg ons op sociale media voor de laatste updates en mooie foto’s van onze henna designs!</p>
-    <ul>
-      <li><a href="#" style="color:#cc0066;">TikTok: @Simrans.henna</a></li>
-<li>binnekort komen er meer socials!</li>
-    </ul>
-  </section>
-
-  <script>
-    function openTab(tabId) {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(sec => sec.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-    }
-
-    function updateCountdown() {
-      const launchDate = new Date('June 9, 2025 00:00:00').getTime();
-      const now = new Date().getTime();
-      const diff = launchDate - now;
-
-      if (diff <= 0) {
-        document.getElementById('countdown').innerHTML = "De officiële lancering is nu!";
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      document.getElementById('countdown').innerHTML =
-        days + " dagen " + hours + " uur " + minutes + " min " + seconds + " sec ";
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
 </body>
 </html>
