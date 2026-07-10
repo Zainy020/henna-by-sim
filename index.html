@@ -101,26 +101,22 @@
   <nav>
     <a onclick="openTab('home')">Home</a>
     <a onclick="openTab('designs')">Designs</a>
-    <a onclick="openTab('lancering')">Lancering</a>
-    <a onclick="openTab('updates')">Updates</a>
-    <a onclick="openTab('medewerkers')">Medewerkers</a>
-    <a onclick="openTab('boeken')">Boeken</a>
+    <a onclick="openTab('boek-nu')">Boek nu!</a>
+    <a onclick="openTab('ons-team')">Ons team!</a>
     <a onclick="openTab('faq')">FAQ</a>
     <a onclick="openTab('report')">Report Problems</a>
     <a onclick="openTab('socials')">Socials</a>
     <a onclick="openTab('prijzen')">prijzen</a>
     <a onclick="openTab('revieuws')">revieuws</a>
-    <a onclick="openTab('rooster-simhuidigeweek')">medeweb</a>
+    <a onclick="openTab('medeweb')">medeweb</a>
   </nav>
   
     <section id="home" class="active">
     <h2>Simrans verhaal</h2>
     <p>hier komt een prachtige nieuwe HOME page! tot snel!</p>
   </section>
- 
-    <section id="Designs">
       
-<section id="rooster-simhuidigeweek">
+<section id="medeweb">
   <h2>Medeweb, het nieuwe platform!</h2>
     <p>Medeweb staat voor het nieuwe medewerkersweb! hier vindt je de roosters</p>
     <p>Voorheen waren die op de site maar dat bleek niet zo handig te zijn!</p>
@@ -130,5 +126,23 @@
     Ga naar de officele website van het rooster!
   </a>
 </section>
+
+
+
+
+  <script>
+function openTab(id) {
+  // Verberg alle pagina's
+  document.querySelectorAll("section").forEach(section => {
+    section.classList.remove("active");
+  });
+
+  // Laat de gekozen pagina zien
+  const pagina = document.getElementById(id);
+  if (pagina) {
+    pagina.classList.add("active");
+  }
+}
+</script>
 </body>
 </html>
