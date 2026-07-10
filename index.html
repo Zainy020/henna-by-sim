@@ -114,6 +114,83 @@
 .medeweb-btn:active{
     transform:scale(.98);
 }
+    .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    max-width:1400px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:all .25s ease;
+    display:flex;
+    flex-direction:column;
+    min-height:260px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.card h3{
+    font-size:2rem;
+    margin:0 0 25px;
+    color:#660033;
+    line-height:1.2;
+}
+
+.card p{
+    margin:0 0 15px;
+    color:#555;
+    line-height:1.7;
+    font-size:1.1rem;
+}
+
+.card a{
+    margin-top:auto;
+}
+
+.page{
+    max-width:1500px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.page h1{
+    text-align:center;
+    margin-bottom:40px;
+    color:#660033;
+    font-size:3rem;
+}
+
+@media (max-width:768px){
+
+    .grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .card{
+        min-height:auto;
+        padding:25px;
+    }
+
+    .card h3{
+        font-size:1.6rem;
+    }
+
+    .card p{
+        font-size:1rem;
+    }
+
+}
   </style>
 </head>
 <body>
@@ -138,7 +215,55 @@
     <h2>Simrans verhaal</h2>
     <p>hier komt een prachtige nieuwe HOME page! tot snel!</p>
   </section>
-      
+
+<section id="designs">
+<h1>Simply Henna</h1>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>🌸 Onze Designs</h3>
+        <p>Bekijk al onze prachtige henna-ontwerpen voor elke gelegenheid.</p>
+    </div>
+
+    <div class="card">
+        <h3>📅 Boek een afspraak</h3>
+        <p>Reserveer eenvoudig jouw afspraak online.</p>
+    </div>
+
+    <div class="card">
+        <h3>💰 Prijzen</h3>
+        <p>Bekijk onze tarieven voor kleine, halve en volledige designs.</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Socials</h3>
+        <p>Volg ons op Instagram en TikTok voor inspiratie.</p>
+    </div>
+
+</div>
+
+</section>
+Nog mooier? ✨
+
+Je kunt de hele kaart klikbaar maken. Dat ziet heel professioneel uit:
+
+<div class="card" onclick="openTab('prijzen')" style="cursor:pointer;">
+    <h3>💰 Prijzen</h3>
+    <p>Bekijk al onze tarieven.</p>
+</div>
+
+Of voor een externe link:
+
+<div class="card"
+     onclick="window.open('https://zainy020.github.io/Rooster/','_blank')"
+     style="cursor:pointer;">
+    <h3>📅 Medeweb</h3>
+    <p>Klik hier om het medewerkersplatform te openen.</p>
+</div>
+
+Dat geeft dezelfde moderne uitstraling als je op BBOVNL ziet, maar dan in de kleuren van jouw henna-website. 🌸
+  
 <section id="medeweb">
   <h2>Medeweb, het nieuwe platform!</h2>
     <p>Medeweb staat voor het nieuwe medewerkersweb! hier vindt je de roosters</p>
@@ -149,8 +274,6 @@
    href="https://zainy020.github.io/Rooster/"
    target="_blank">
     📅 Ga naar Medeweb, voorheen Rooster</a>
-  
-
 </section>
 
 
