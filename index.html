@@ -91,6 +91,29 @@
       background-color: #ff66aa;
       color: white;
     }
+.medeweb-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:linear-gradient(135deg,#ff66aa,#ff2d8d);
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:50px;
+    box-shadow:0 8px 20px rgba(255,102,170,.35);
+    transition:all .3s ease;
+}
+
+.medeweb-btn:hover{
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 12px 30px rgba(255,102,170,.5);
+    background:linear-gradient(135deg,#ff2d8d,#ff66aa);
+}
+
+.medeweb-btn:active{
+    transform:scale(.98);
+}
   </style>
 </head>
 <body>
@@ -104,10 +127,10 @@
     <a onclick="openTab('boek-nu')">Boek nu!</a>
     <a onclick="openTab('ons-team')">Ons team!</a>
     <a onclick="openTab('faq')">FAQ</a>
-    <a onclick="openTab('report')">Report Problems</a>
     <a onclick="openTab('socials')">Socials</a>
     <a onclick="openTab('prijzen')">prijzen</a>
     <a onclick="openTab('revieuws')">revieuws</a>
+    <a onclick="openTab('report')>Problemen</a>
     <a onclick="openTab('medeweb')">medeweb</a>
   </nav>
   
@@ -122,9 +145,12 @@
     <p>Voorheen waren die op de site maar dat bleek niet zo handig te zijn!</p>
     <p>Hier vindt je nu ook *Updates etc! hopelijk tot daar!</p>
 
-  <a class="knop" href="https://zainy020.github.io/Rooster/" target="_blank">
-    Ga naar de officele website van het rooster!
-  </a>
+   <a class="medeweb-btn"
+   href="https://zainy020.github.io/Rooster/"
+   target="_blank">
+    📅 Ga naar Medeweb, voorheen Rooster</a>
+  
+
 </section>
 
 
