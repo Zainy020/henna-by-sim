@@ -7755,6 +7755,526 @@
   }
 
 }
+    /* =========================
+   ALGEMENE VOORWAARDEN PAGE
+========================= */
+
+#Algemenevoorwaarde {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.av-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.av-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.av-hero .av-label {
+  color: #ffb3d9;
+}
+
+.av-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.av-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.av-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.av-primary,
+.av-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.av-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.av-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.av-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.av-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.av-intro {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 35px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.av-intro-text {
+  padding: 40px 20px;
+}
+
+.av-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.av-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.av-intro-art {
+  position: relative;
+  min-height: 370px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.av-document-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-5deg);
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(102, 0, 51, 0.1);
+}
+
+.av-document-icon span {
+  font-size: 70px;
+}
+
+.av-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+}
+
+.av-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+}
+
+.av-art-decoration {
+  position: absolute;
+  font-size: 35px;
+}
+
+.av-art-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.av-art-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.av-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.av-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.av-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* OVERVIEW */
+
+.av-overview {
+  margin: 110px 0;
+  scroll-margin-top: 100px;
+}
+
+.av-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.av-card {
+  background: white;
+  border-radius: 28px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.av-card:hover {
+  transform: translateY(-7px);
+  border-color: #ffe6f0;
+  box-shadow: 0 16px 40px rgba(255, 102, 170, 0.18);
+}
+
+.av-card-featured {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border-color: #ffb3d9;
+}
+
+.av-card-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.av-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.av-card h3 {
+  color: #660033;
+  font-size: 24px;
+  margin: 10px 0 15px;
+}
+
+.av-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+
+/* DOCUMENT */
+
+.av-document {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 65px;
+  margin: 120px 0;
+}
+
+.av-document-text .av-label {
+  color: #ffb3d9;
+}
+
+.av-document-text h2 {
+  color: white;
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 5px 0 22px;
+}
+
+.av-document-text p {
+  color: #ffe6f0;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.av-document-info {
+  background: white;
+  border-radius: 28px;
+  padding: 38px;
+}
+
+.av-document-big-icon {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.av-document-info h3 {
+  color: #660033;
+  font-size: 27px;
+  margin: 8px 0 25px;
+}
+
+.av-document-data {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.av-document-data div {
+  background: #fff0f6;
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+.av-document-data span {
+  display: block;
+  color: #8b6075;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.av-document-data strong {
+  color: #660033;
+  font-size: 15px;
+}
+
+
+/* IMPORTANT */
+
+.av-important {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 35px;
+  align-items: flex-start;
+  background: white;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 120px 0;
+  border: 2px solid #ffe6f0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.av-important-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.av-important-icon span {
+  font-size: 45px;
+}
+
+.av-important-text h2 {
+  color: #660033;
+  font-size: 34px;
+  margin: 5px 0 20px;
+}
+
+.av-important-text p {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* CTA */
+
+.av-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.av-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.av-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+.av-cta .av-buttons {
+  justify-content: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .av-intro,
+  .av-document {
+    grid-template-columns: 1fr;
+  }
+
+  .av-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #Algemenevoorwaarde {
+    padding: 15px 10px 100px;
+  }
+
+  .av-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .av-hero h1 {
+    font-size: 38px;
+  }
+
+  .av-hero p {
+    font-size: 16px;
+  }
+
+  .av-buttons {
+    flex-direction: column;
+  }
+
+  .av-primary,
+  .av-secondary {
+    text-align: center;
+  }
+
+  .av-intro,
+  .av-overview,
+  .av-document,
+  .av-important {
+    margin: 70px 0;
+  }
+
+  .av-intro-text {
+    padding: 10px 5px;
+  }
+
+  .av-intro-text h2,
+  .av-section-heading h2,
+  .av-document-text h2,
+  .av-important-text h2,
+  .av-cta h2 {
+    font-size: 30px;
+  }
+
+  .av-intro-art {
+    min-height: 300px;
+  }
+
+  .av-document-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .av-document-icon span {
+    font-size: 55px;
+  }
+
+  .av-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .av-document {
+    padding: 45px 25px;
+    gap: 35px;
+    border-radius: 25px;
+  }
+
+  .av-document-info {
+    padding: 28px 23px;
+  }
+
+  .av-important {
+    grid-template-columns: 1fr;
+    padding: 35px 25px;
+  }
+
+  .av-important-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .av-important-icon span {
+    font-size: 37px;
+  }
+
+  .av-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 
@@ -12361,7 +12881,331 @@
 
 </section>
 
+<section id="Algemenevoorwaarde">
 
+  <!-- HERO -->
+  <div class="av-hero">
+
+    <span class="av-label">📜 ALGEMENE VOORWAARDEN</span>
+
+    <h1>Duidelijke afspraken.<br>Voor iedereen.</h1>
+
+    <p>
+      Bij Simply Henna vinden wij het belangrijk dat u weet
+      waar u aan toe bent. Daarom hebben wij onze afspraken
+      duidelijk vastgelegd.
+    </p>
+
+    <div class="av-buttons">
+
+      <a
+        class="av-primary"
+        href="https://docs.google.com/document/d/1hi4PzPtDr6bJ5N4LoPSYfFSQdVQ5zNbmKOvc_2ZGGZs/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📖 Lees de volledige voorwaarden
+      </a>
+
+      <a class="av-secondary" href="#av-overzicht">
+        Bekijk het overzicht ↓
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="av-intro">
+
+    <div class="av-intro-text">
+
+      <span class="av-label">GOED OM TE WETEN</span>
+
+      <h2>Afspraken zonder kleine lettertjes te verstoppen.</h2>
+
+      <p>
+        Onze Algemene Voorwaarden bevatten de afspraken over onder andere
+        boekingen, betalingen, annuleringen en onze dienstverlening.
+      </p>
+
+      <p>
+        Op deze pagina vindt u een korte en toegankelijke samenvatting
+        van een aantal belangrijke onderwerpen.
+      </p>
+
+      <p>
+        Voor de volledige bepalingen, voorwaarden en uitzonderingen
+        verwijzen wij u naar het officiële document.
+      </p>
+
+    </div>
+
+
+    <div class="av-intro-art">
+
+      <span class="av-art-decoration av-art-one">🌸</span>
+
+      <div class="av-document-icon">
+        <span>📜</span>
+      </div>
+
+      <strong>Simply Henna</strong>
+
+      <p>Helder. Duidelijk. Vastgelegd.</p>
+
+      <span class="av-art-decoration av-art-two">✨</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- OVERZICHT -->
+  <div class="av-overview" id="av-overzicht">
+
+    <div class="av-section-heading">
+
+      <span class="av-label">IN HET KORT</span>
+
+      <h2>De belangrijkste afspraken.</h2>
+
+      <p>
+        Een kort overzicht van onderwerpen die belangrijk kunnen zijn
+        vóór, tijdens en na uw afspraak.
+      </p>
+
+    </div>
+
+
+    <div class="av-card-grid">
+
+
+      <div class="av-card">
+
+        <div class="av-card-icon">📅</div>
+
+        <span class="av-mini-label">AFSPRAKEN</span>
+
+        <h3>Boekingen</h3>
+
+        <p>
+          Een boekingsaanvraag is niet automatisch een bevestigde afspraak.
+          Een afspraak is pas definitief nadat deze door Simply Henna
+          is bevestigd.
+        </p>
+
+      </div>
+
+
+      <div class="av-card av-card-featured">
+
+        <div class="av-card-icon">❌</div>
+
+        <span class="av-mini-label">ANNULEREN</span>
+
+        <h3>Annuleringen</h3>
+
+        <p>
+          Bij annulering van een bevestigde boeking door de klant geldt
+          in beginsel een annuleringsvergoeding van 50% van de
+          overeengekomen totaalprijs.
+        </p>
+
+      </div>
+
+
+      <div class="av-card">
+
+        <div class="av-card-icon">💳</div>
+
+        <span class="av-mini-label">BETALING</span>
+
+        <h3>Betaling</h3>
+
+        <p>
+          Afspraken over prijzen, betaalmethoden en het moment van betaling
+          worden beschreven in onze Algemene Voorwaarden en kunnen nader
+          worden bevestigd bij uw boeking.
+        </p>
+
+      </div>
+
+
+      <div class="av-card">
+
+        <div class="av-card-icon">💸</div>
+
+        <span class="av-mini-label">TERUGBETALING</span>
+
+        <h3>Restitutie</h3>
+
+        <p>
+          Simply Henna hanteert geen algemene tevredenheidsgarantie.
+          Correct en overeenkomstig de gemaakte afspraken uitgevoerde
+          diensten worden in beginsel niet vrijwillig gerestitueerd.
+        </p>
+
+      </div>
+
+
+      <div class="av-card">
+
+        <div class="av-card-icon">🌿</div>
+
+        <span class="av-mini-label">RESULTAAT</span>
+
+        <h3>Henna & nazorg</h3>
+
+        <p>
+          Het resultaat en de kleurontwikkeling van henna kunnen verschillen
+          door onder andere huidtype, verzorging, watercontact en andere
+          persoonlijke of externe factoren.
+        </p>
+
+      </div>
+
+
+      <div class="av-card">
+
+        <div class="av-card-icon">⚖️</div>
+
+        <span class="av-mini-label">CONSUMENT</span>
+
+        <h3>Uw rechten</h3>
+
+        <p>
+          Wettelijke consumentenrechten blijven van toepassing.
+          Onze Algemene Voorwaarden bevatten de volledige bepalingen,
+          voorwaarden en uitzonderingen.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- OFFICIEEL DOCUMENT -->
+  <div class="av-document">
+
+    <div class="av-document-text">
+
+      <span class="av-label">HET OFFICIËLE DOCUMENT</span>
+
+      <h2>Alle voorwaarden.<br>Op één plek.</h2>
+
+      <p>
+        In het officiële document vindt u alle artikelen en uitgebreide
+        bepalingen over onder andere boekingen, annuleringen, betalingen,
+        restitutie, klachten, privacy en consumentenrechten.
+      </p>
+
+      <a
+        class="av-primary"
+        href="https://docs.google.com/document/d/1hi4PzPtDr6bJ5N4LoPSYfFSQdVQ5zNbmKOvc_2ZGGZs/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📜 Open de Algemene Voorwaarden
+      </a>
+
+    </div>
+
+
+    <div class="av-document-info">
+
+      <span class="av-document-big-icon">📖</span>
+
+      <span class="av-mini-label">DOCUMENTINFORMATIE</span>
+
+      <h3>Algemene Voorwaarden</h3>
+
+      <div class="av-document-data">
+
+        <div>
+          <span>Documentcode</span>
+          <strong>AV-SH/2026.07-1.1</strong>
+        </div>
+
+        <div>
+          <span>Versie</span>
+          <strong>1.1</strong>
+        </div>
+
+        <div>
+          <span>Document</span>
+          <strong>Publieke voorwaarden</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- BELANGRIJK -->
+  <div class="av-important">
+
+    <div class="av-important-icon">
+      <span>ℹ️</span>
+    </div>
+
+    <div class="av-important-text">
+
+      <span class="av-label">BELANGRIJK</span>
+
+      <h2>Deze pagina is een samenvatting.</h2>
+
+      <p>
+        De informatie op deze pagina is een korte en vereenvoudigde uitleg.
+        Aan deze samenvatting kunnen niet zelfstandig andere rechten of
+        verplichtingen worden ontleend dan uit de overeenkomst, de volledige
+        Algemene Voorwaarden en het toepasselijke recht voortvloeien.
+      </p>
+
+      <p>
+        Bij verschil tussen deze uitleg en het officiële document wordt de
+        volledige tekst van de Algemene Voorwaarden toegepast, voor zover
+        wettelijk toegestaan.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="av-cta">
+
+    <span class="av-label">SIMPLY HENNA</span>
+
+    <h2>Nog een vraag over onze afspraken?</h2>
+
+    <p>
+      Bekijk onze veelgestelde vragen of neem via onze officiële
+      kanalen contact met Simply Henna op.
+    </p>
+
+    <div class="av-buttons">
+
+      <a class="av-primary" onclick="openTab('faq')">
+        Bekijk de FAQ →
+      </a>
+
+      <a class="av-secondary" onclick="openTab('socials')">
+        Onze socials
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
   <script>
