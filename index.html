@@ -1596,6 +1596,636 @@
   }
 
 }
+    /* =========================
+   BOOKING PAGE
+========================= */
+
+#boek-nu {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.booking-hero {
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  border-radius: 30px;
+  padding: 75px 55px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(255, 102, 170, 0.15);
+}
+
+.booking-label {
+  display: inline-block;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.booking-hero h1 {
+  color: #660033;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.booking-hero p {
+  color: #6d3b53;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto 32px;
+}
+
+
+/* BUTTONS */
+
+.booking-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.booking-primary,
+.booking-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.booking-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.booking-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.booking-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.booking-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO + FORM CARD */
+
+.booking-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
+  margin: 100px 0;
+  align-items: center;
+}
+
+.booking-intro-text {
+  padding: 30px 20px;
+}
+
+.booking-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.booking-intro-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.booking-small-link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+  background: #fff0f6;
+  border-radius: 18px;
+  padding: 18px 22px;
+}
+
+.booking-small-link > span {
+  font-size: 25px;
+}
+
+.booking-small-link p {
+  color: #6d3b53;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.booking-small-link a {
+  color: #ff2d8d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking-form-card {
+  background: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ffe6f0;
+}
+
+.booking-form-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  transform: rotate(-5deg);
+}
+
+.booking-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.booking-form-card h3 {
+  color: #660033;
+  font-size: 30px;
+  margin: 10px 0 15px;
+}
+
+.booking-form-card p {
+  color: #6d3b53;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.booking-form-button {
+  display: block;
+}
+
+.booking-form-note {
+  display: block;
+  color: #9b6b82;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+/* SECTION HEADING */
+
+.booking-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.booking-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.booking-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* PROCESS */
+
+.booking-process {
+  margin: 110px 0;
+}
+
+.booking-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.booking-process-item {
+  position: relative;
+  background: white;
+  border-radius: 28px;
+  padding: 38px 32px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.booking-process-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 40px rgba(255, 102, 170, 0.18);
+}
+
+.booking-process-featured {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border: 2px solid #ffb3d9;
+  transform: translateY(-15px);
+}
+
+.booking-process-featured:hover {
+  transform: translateY(-22px);
+}
+
+.booking-process-number {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  color: #ffe6f0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.booking-process-icon {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.booking-process-item h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 0 0 13px;
+}
+
+.booking-process-item p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* IMPORTANT */
+
+.booking-important {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.booking-important-visual {
+  position: relative;
+  min-height: 570px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-important-visual > span {
+  font-size: 100px;
+}
+
+.booking-decoration {
+  position: absolute;
+  font-size: 38px;
+}
+
+.booking-decoration-one {
+  top: 55px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.booking-decoration-two {
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(15deg);
+}
+
+.booking-important-text {
+  padding: 65px;
+}
+
+.booking-important-text h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.booking-important-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.booking-important-text > p strong {
+  color: #660033;
+}
+
+.booking-important-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin: 28px 0;
+}
+
+.booking-important-note > span {
+  font-size: 27px;
+}
+
+.booking-important-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.booking-important-note strong {
+  color: #660033;
+}
+
+.booking-text-link {
+  color: #ff2d8d;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.booking-text-link:hover {
+  transform: translateX(5px);
+}
+
+
+/* PREPARE */
+
+.booking-prepare {
+  margin: 120px 0;
+}
+
+.booking-prepare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.booking-prepare-card {
+  background: white;
+  border-radius: 25px;
+  padding: 35px;
+  transition: 0.25s;
+}
+
+.booking-prepare-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 102, 170, 0.15);
+}
+
+.booking-prepare-card > span {
+  font-size: 37px;
+}
+
+.booking-prepare-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 18px 0 10px;
+}
+
+.booking-prepare-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* FORM INFORMATION */
+
+.booking-form-info {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 65px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.booking-form-info .booking-label {
+  color: #ffb3d9;
+}
+
+.booking-form-info-text h2 {
+  color: white;
+  font-size: 42px;
+  margin: 5px 0 20px;
+}
+
+.booking-form-info-text p {
+  color: #ffe6f0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.booking-form-info-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  padding: 35px;
+}
+
+.booking-form-info-box > span {
+  font-size: 38px;
+}
+
+.booking-form-info-box p {
+  color: white;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.booking-form-info-box strong {
+  color: #ffb3d9;
+}
+
+
+/* HELP */
+
+.booking-help {
+  margin: 120px 0;
+}
+
+.booking-help-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+/* CTA */
+
+.booking-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.booking-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.booking-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .booking-intro,
+  .booking-important,
+  .booking-form-info {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-process-featured,
+  .booking-process-featured:hover {
+    transform: none;
+  }
+
+  .booking-important-visual {
+    min-height: 300px;
+  }
+
+  .booking-form-info {
+    gap: 30px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #boek-nu {
+    padding: 15px 10px 100px;
+  }
+
+  .booking-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .booking-hero h1 {
+    font-size: 39px;
+  }
+
+  .booking-hero p {
+    font-size: 16px;
+  }
+
+  .booking-buttons {
+    flex-direction: column;
+  }
+
+  .booking-primary,
+  .booking-secondary {
+    text-align: center;
+  }
+
+  .booking-intro,
+  .booking-process,
+  .booking-important,
+  .booking-prepare,
+  .booking-form-info,
+  .booking-help {
+    margin: 70px 0;
+  }
+
+  .booking-intro-text {
+    padding: 10px 5px;
+  }
+
+  .booking-intro-text h2,
+  .booking-section-heading h2,
+  .booking-important-text h2,
+  .booking-form-info-text h2,
+  .booking-cta h2 {
+    font-size: 30px;
+  }
+
+  .booking-form-card {
+    padding: 38px 25px;
+  }
+
+  .booking-form-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 37px;
+  }
+
+  .booking-important-visual {
+    min-height: 250px;
+  }
+
+  .booking-important-visual > span {
+    font-size: 75px;
+  }
+
+  .booking-important-text {
+    padding: 38px 25px;
+  }
+
+  .booking-prepare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form-info {
+    padding: 45px 25px;
+    border-radius: 25px;
+  }
+
+  .booking-help-buttons {
+    flex-direction: column;
+  }
+
+  .booking-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 <body>
@@ -2343,14 +2973,400 @@
 </section>
   
 
-  <section id="boek-nu">  
-<h1>Boek uw afspraak met Simplyhenna nu!</h1>
-<h2>U kunt contact met ons opnemen via @Simplyhenna.nl op tiktok & Insta.</h2>
-   <a class="medeweb-btn"
-    href="https://docs.google.com/forms/d/e/1FAIpQLSdwX5WMa_q5u9G-jIZ5p1d2hK08sdz2FNMsS5tm6ihO8HGd3g/viewform?usp=dialog"
-   target="_blank">
-    of boek eenvoudig een afspraak online! Klik hier!</a> 
-</div>
+<section id="boek-nu">
+
+  <!-- BOOKING HERO -->
+  <div class="booking-hero">
+
+    <span class="booking-label">📅 BOEK BIJ SIMPLY HENNA</span>
+
+    <h1>Uw henna begint<br>hier. 🌸</h1>
+
+    <p>
+      Klaar voor uw henna? Dien eenvoudig online een
+      boekingsaanvraag in en vertel ons wat u in gedachten heeft.
+    </p>
+
+    <div class="booking-buttons">
+
+      <a class="booking-primary"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSdwX5WMa_q5u9G-jIZ5p1d2hK08sdz2FNMsS5tm6ihO8HGd3g/viewform?usp=dialog"
+         target="_blank"
+         rel="noopener noreferrer">
+        🌸 Start uw boekingsaanvraag
+      </a>
+
+      <a class="booking-secondary" onclick="openTab('designs')">
+        Eerst designs bekijken →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- BOOKING INTRO -->
+  <div class="booking-intro">
+
+    <div class="booking-intro-text">
+
+      <span class="booking-label">EEN AFSPRAAK AANVRAGEN</span>
+
+      <h2>Vertel ons over uw henna.</h2>
+
+      <p>
+        Via ons online boekingsformulier kunt u aangeven wanneer
+        u graag een afspraak wilt en wat voor henna u in gedachten heeft.
+      </p>
+
+      <p>
+        Heeft u al een specifiek design, een voorbeeld of alleen een
+        bepaalde stijl in gedachten? Deel uw wensen met ons.
+        Simply Henna bekijkt vervolgens de mogelijkheden.
+      </p>
+
+      <div class="booking-small-link">
+        <span>🌿</span>
+
+        <p>
+          Nog inspiratie nodig?
+          <a onclick="openTab('designs')">Bekijk onze designs →</a>
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="booking-form-card">
+
+      <div class="booking-form-icon">🌸</div>
+
+      <span class="booking-mini-label">ONLINE BOEKEN</span>
+
+      <h3>Boekingsaanvraag</h3>
+
+      <p>
+        Vul het formulier in en geef uw wensen aan.
+        Wij bekijken uw aanvraag en nemen contact met u op.
+      </p>
+
+      <a class="booking-primary booking-form-button"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSdwX5WMa_q5u9G-jIZ5p1d2hK08sdz2FNMsS5tm6ihO8HGd3g/viewform?usp=dialog"
+         target="_blank"
+         rel="noopener noreferrer">
+        Open het boekingsformulier →
+      </a>
+
+      <span class="booking-form-note">
+        Opent in een nieuw venster
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- HOE WERKT HET -->
+  <div class="booking-process">
+
+    <div class="booking-section-heading">
+
+      <span class="booking-label">ZO WERKT HET</span>
+
+      <h2>Van aanvraag naar henna. 🤎</h2>
+
+      <p>
+        Een afspraak aanvragen bij Simply Henna is eenvoudig.
+      </p>
+
+    </div>
+
+
+    <div class="booking-process-grid">
+
+      <div class="booking-process-item">
+
+        <span class="booking-process-number">01</span>
+
+        <div class="booking-process-icon">📝</div>
+
+        <h3>Vul het formulier in</h3>
+
+        <p>
+          Geef uw contactgegevens, gewenste datum en
+          informatie over uw henna-wensen door.
+        </p>
+
+      </div>
+
+
+      <div class="booking-process-item booking-process-featured">
+
+        <span class="booking-process-number">02</span>
+
+        <div class="booking-process-icon">💬</div>
+
+        <h3>Wij bekijken uw aanvraag</h3>
+
+        <p>
+          Simply Henna beoordeelt de mogelijkheden en kan
+          contact met u opnemen voor verdere afstemming.
+        </p>
+
+      </div>
+
+
+      <div class="booking-process-item">
+
+        <span class="booking-process-number">03</span>
+
+        <div class="booking-process-icon">🌸</div>
+
+        <h3>Uw afspraak wordt bevestigd</h3>
+
+        <p>
+          Is alles afgestemd? Dan ontvangt u een bevestiging
+          van uw afspraak van Simply Henna.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- BELANGRIJK -->
+  <div class="booking-important">
+
+    <div class="booking-important-visual">
+
+      <span>📅</span>
+
+      <div class="booking-decoration booking-decoration-one">🌸</div>
+      <div class="booking-decoration booking-decoration-two">🌿</div>
+
+    </div>
+
+
+    <div class="booking-important-text">
+
+      <span class="booking-label">GOED OM TE WETEN</span>
+
+      <h2>Een aanvraag is nog geen bevestigde afspraak.</h2>
+
+      <p>
+        Wanneer u het boekingsformulier verstuurt, dient u een
+        <strong>boekingsaanvraag</strong> in.
+      </p>
+
+      <p>
+        De door u gekozen datum en het gewenste tijdstip gelden als
+        voorkeur totdat Simply Henna uw afspraak heeft bevestigd.
+      </p>
+
+      <p>
+        Soms kan aanvullende afstemming nodig zijn of kan Simply Henna
+        een andere datum of tijd voorstellen.
+      </p>
+
+
+      <div class="booking-important-note">
+
+        <span>💡</span>
+
+        <p>
+          <strong>Wacht altijd op onze bevestiging.</strong><br>
+          Uw afspraak is pas definitief nadat Simply Henna deze
+          voldoende duidelijk heeft bevestigd.
+        </p>
+
+      </div>
+
+      <a class="booking-text-link" onclick="openTab('Algemenevoorwaarde')">
+        Lees meer in onze Algemene Voorwaarden →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- WAT HEBBEN WE NODIG -->
+  <div class="booking-prepare">
+
+    <div class="booking-section-heading">
+
+      <span class="booking-label">UW AANVRAAG</span>
+
+      <h2>Wat kunt u alvast bedenken?</h2>
+
+      <p>
+        Geen zorgen als u nog niet alles precies weet.
+        Deze informatie helpt ons wel om uw aanvraag beter te bekijken.
+      </p>
+
+    </div>
+
+
+    <div class="booking-prepare-grid">
+
+      <div class="booking-prepare-card">
+
+        <span>🌸</span>
+
+        <h3>Uw gewenste stijl</h3>
+
+        <p>
+          Subtiel, floral, uitgebreid of misschien een
+          eigen idee. Vertel ons wat u mooi vindt.
+        </p>
+
+      </div>
+
+
+      <div class="booking-prepare-card">
+
+        <span>📅</span>
+
+        <h3>Datum en tijd</h3>
+
+        <p>
+          Geef aan wanneer u graag een afspraak wilt.
+          Uw voorkeur wordt door Simply Henna bekeken.
+        </p>
+
+      </div>
+
+
+      <div class="booking-prepare-card">
+
+        <span>📍</span>
+
+        <h3>De afspraak</h3>
+
+        <p>
+          Geef relevante informatie over uw aanvraag door.
+          Voor bijzondere gelegenheden kunt u dit ook vermelden.
+        </p>
+
+      </div>
+
+
+      <div class="booking-prepare-card">
+
+        <span>✨</span>
+
+        <h3>Inspiratie</h3>
+
+        <p>
+          Heeft u een voorbeeld of een bepaalde sfeer in gedachten?
+          Gebruik dit om uw wensen duidelijk te maken.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- PRIVACY / VEILIG FORMULIER -->
+  <div class="booking-form-info">
+
+    <div class="booking-form-info-text">
+
+      <span class="booking-label">UW INFORMATIE</span>
+
+      <h2>Deel alleen wat nodig is. 🔐</h2>
+
+      <p>
+        Gebruik het boekingsformulier alleen voor informatie die
+        relevant is voor uw aanvraag.
+      </p>
+
+      <p>
+        Deel geen wachtwoorden, pincodes, betaalcodes,
+        burgerservicenummers of kopieën van identiteitsdocumenten
+        via vrije tekstvelden.
+      </p>
+
+    </div>
+
+
+    <div class="booking-form-info-box">
+
+      <span>🤎</span>
+
+      <p>
+        <strong>Een vraag over uw aanvraag?</strong><br>
+        Simply Henna kan contact met u opnemen wanneer aanvullende
+        informatie of afstemming nodig is.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- HULP -->
+  <div class="booking-help">
+
+    <div class="booking-section-heading">
+
+      <span class="booking-label">NOG EEN VRAAG?</span>
+
+      <h2>Wij helpen u graag verder. 💬</h2>
+
+      <p>
+        Misschien staat uw antwoord al tussen onze veelgestelde vragen.
+        U kunt Simply Henna ook bereiken via onze officiële kanalen.
+      </p>
+
+    </div>
+
+
+    <div class="booking-help-buttons">
+
+      <a class="booking-secondary" onclick="openTab('faq')">
+        Bekijk de FAQ →
+      </a>
+
+      <a class="booking-secondary" onclick="openTab('socials')">
+        Bekijk onze socials →
+      </a>
+
+      <a class="booking-secondary"
+         href="mailto:simplyhennamanagement@gmail.com">
+        ✉️ Stuur een e-mail
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- SLOT CTA -->
+  <div class="booking-cta">
+
+    <span class="booking-label">KLAAR VOOR UW HENNA?</span>
+
+    <h2>Uw Simply Henna-moment begint hier. 🌸</h2>
+
+    <p>
+      Vertel ons uw wensen en dien vandaag nog eenvoudig
+      uw boekingsaanvraag in.
+    </p>
+
+    <a class="booking-primary"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSdwX5WMa_q5u9G-jIZ5p1d2hK08sdz2FNMsS5tm6ihO8HGd3g/viewform?usp=dialog"
+       target="_blank"
+       rel="noopener noreferrer">
+      🌸 Start uw boekingsaanvraag
+    </a>
+
+  </div>
+
 </section>
 
 
