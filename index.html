@@ -920,6 +920,682 @@
   }
 
 }
+    /* =========================
+   DESIGNS PAGE
+========================= */
+
+#designs {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.designs-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.designs-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.designs-hero .designs-label {
+  color: #ffb3d9;
+}
+
+.designs-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.designs-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.designs-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.designs-primary,
+.designs-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.designs-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.designs-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.designs-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.designs-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.designs-intro {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 35px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.designs-intro-text {
+  padding: 35px 20px;
+}
+
+.designs-intro-text h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.designs-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.designs-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.designs-art-main {
+  font-size: 85px;
+  margin-bottom: 20px;
+}
+
+.designs-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+}
+
+.designs-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+}
+
+.designs-art-flower {
+  position: absolute;
+  font-size: 35px;
+}
+
+.designs-flower-one {
+  top: 35px;
+  left: 40px;
+  transform: rotate(-15deg);
+}
+
+.designs-flower-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.designs-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.designs-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.designs-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* STYLE CARDS */
+
+.designs-styles {
+  margin: 110px 0;
+}
+
+.designs-style-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.designs-style-card {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.designs-style-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 40px rgba(255, 102, 170, 0.2);
+}
+
+.designs-style-featured {
+  transform: translateY(-15px);
+}
+
+.designs-style-featured:hover {
+  transform: translateY(-22px);
+}
+
+.designs-style-visual {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.designs-style-visual span {
+  font-size: 70px;
+}
+
+.designs-visual-soft {
+  background: linear-gradient(135deg, #fff0f6, #ffe6f0);
+}
+
+.designs-visual-floral {
+  background: linear-gradient(135deg, #ffb3d9, #ffdeed);
+}
+
+.designs-visual-detailed {
+  background: linear-gradient(135deg, #660033, #9b1857);
+}
+
+.designs-style-content {
+  padding: 32px;
+}
+
+.designs-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.designs-style-content h3 {
+  color: #660033;
+  font-size: 24px;
+  margin: 10px 0 15px;
+}
+
+.designs-style-content p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+  min-height: 78px;
+}
+
+.designs-style-content a {
+  color: #ff2d8d;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.designs-style-content a:hover {
+  transform: translateX(5px);
+}
+
+
+/* GALLERY */
+
+.designs-gallery {
+  margin: 120px 0;
+}
+
+.designs-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px;
+}
+
+.designs-gallery-item {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.designs-gallery-large {
+  grid-row: span 2;
+}
+
+.designs-gallery-wide {
+  grid-column: span 2;
+}
+
+.designs-gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.designs-gallery-item:nth-child(2) .designs-gallery-placeholder {
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.designs-gallery-item:nth-child(3) .designs-gallery-placeholder {
+  background: linear-gradient(135deg, #660033, #9b1857);
+}
+
+.designs-gallery-item:nth-child(3) strong,
+.designs-gallery-item:nth-child(3) p {
+  color: white;
+}
+
+.designs-gallery-item:nth-child(4) .designs-gallery-placeholder {
+  background: linear-gradient(135deg, #fff0f6, white);
+}
+
+.designs-gallery-placeholder:hover {
+  transform: scale(1.03);
+}
+
+.designs-gallery-placeholder span {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.designs-gallery-placeholder strong {
+  color: #660033;
+  font-size: 21px;
+}
+
+.designs-gallery-placeholder p {
+  color: #6d3b53;
+  margin: 7px 0;
+}
+
+.designs-gallery-note {
+  margin-top: 25px;
+  background: white;
+  border-radius: 22px;
+  padding: 25px 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.designs-gallery-note > span {
+  font-size: 30px;
+}
+
+.designs-gallery-note p {
+  flex: 1;
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.designs-gallery-note strong {
+  color: #660033;
+}
+
+.designs-gallery-note a {
+  color: #ff2d8d;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+/* CUSTOM */
+
+.designs-custom {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.designs-custom-visual {
+  position: relative;
+  min-height: 540px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.designs-custom-visual > span {
+  font-size: 95px;
+}
+
+.designs-custom-decoration {
+  position: absolute;
+  font-size: 40px;
+}
+
+.decoration-one {
+  top: 50px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.decoration-two {
+  right: 45px;
+  bottom: 50px;
+  transform: rotate(15deg);
+}
+
+.designs-custom-text {
+  padding: 65px;
+}
+
+.designs-custom-text h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.designs-custom-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.designs-custom-note {
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 20px 23px;
+  display: flex;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.designs-custom-note > span {
+  font-size: 25px;
+}
+
+.designs-custom-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.designs-custom-note strong {
+  color: #660033;
+}
+
+
+/* CHOICE */
+
+.designs-choice {
+  margin: 120px 0;
+}
+
+.designs-choice-grid {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.designs-choice-item {
+  background: white;
+  border-radius: 25px;
+  padding: 28px 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.designs-choice-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(255, 102, 170, 0.13);
+}
+
+.designs-choice-number {
+  color: #ffb3d9;
+  font-size: 45px;
+  font-weight: bold;
+  min-width: 65px;
+}
+
+.designs-choice-item h3 {
+  color: #660033;
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+
+.designs-choice-item p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* CTA */
+
+.designs-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.designs-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.designs-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+.designs-cta .designs-buttons {
+  justify-content: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .designs-intro,
+  .designs-custom {
+    grid-template-columns: 1fr;
+  }
+
+  .designs-style-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .designs-style-featured,
+  .designs-style-featured:hover {
+    transform: none;
+  }
+
+  .designs-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .designs-gallery-large {
+    grid-row: span 1;
+  }
+
+  .designs-gallery-wide {
+    grid-column: span 1;
+  }
+
+  .designs-custom-visual {
+    min-height: 300px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #designs {
+    padding: 15px 10px 100px;
+  }
+
+  .designs-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .designs-hero h1 {
+    font-size: 39px;
+  }
+
+  .designs-hero p {
+    font-size: 16px;
+  }
+
+  .designs-buttons {
+    flex-direction: column;
+  }
+
+  .designs-primary,
+  .designs-secondary {
+    text-align: center;
+  }
+
+  .designs-intro,
+  .designs-styles,
+  .designs-gallery,
+  .designs-custom,
+  .designs-choice {
+    margin: 70px 0;
+  }
+
+  .designs-intro-text {
+    padding: 10px 5px;
+  }
+
+  .designs-intro-text h2,
+  .designs-section-heading h2,
+  .designs-custom-text h2,
+  .designs-cta h2 {
+    font-size: 30px;
+  }
+
+  .designs-intro-art {
+    min-height: 280px;
+  }
+
+  .designs-style-content p {
+    min-height: 0;
+  }
+
+  .designs-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 230px;
+  }
+
+  .designs-gallery-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .designs-gallery-note a {
+    white-space: normal;
+  }
+
+  .designs-custom-text {
+    padding: 38px 25px;
+  }
+
+  .designs-choice-item {
+    padding: 25px;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .designs-choice-number {
+    font-size: 35px;
+    min-width: 45px;
+  }
+
+  .designs-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 <body>
@@ -1324,19 +2000,346 @@
 
   
 <section id="designs">
-<h1>Designs</h1>
 
-<div class="grid">
+  <!-- DESIGNS HERO -->
+  <div class="designs-hero">
+    <span class="designs-label">🌸 ONZE DESIGNS</span>
 
-    <div class="card">
-        <h3>🌸 Onze Designs</h3>
-        <p>Bekijk al onze prachtige henna-ontwerpen voor elke gelegenheid binnekort hier!.</p>
+    <h1>Henna die bij<br>u past.</h1>
+
+    <p>
+      Van subtiele details tot uitgebreidere patronen.
+      Ontdek de stijl van Simply Henna en laat u inspireren
+      voor uw eigen henna-design.
+    </p>
+
+    <div class="designs-buttons">
+      <a class="designs-primary" onclick="openTab('boek-nu')">
+        📅 Boek een afspraak
+      </a>
+
+      <a class="designs-secondary" href="#designs-stijlen">
+        Ontdek onze stijlen ↓
+      </a>
+    </div>
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="designs-intro">
+
+    <div class="designs-intro-text">
+      <span class="designs-label">SIMPLY YOUR STYLE</span>
+
+      <h2>Geen hand is hetzelfde. Uw henna hoeft dat ook niet te zijn.</h2>
+
+      <p>
+        Bij Simply Henna draait een design niet alleen om een mooi patroon.
+        We kijken naar uw wensen, uw inspiratie en het soort henna dat bij
+        het moment past.
+      </p>
+
+      <p>
+        Heeft u al precies een idee? Of weet u alleen dat u iets moois wilt?
+        Beide zijn helemaal prima. Samen kijken we naar de mogelijkheden.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>📅 Boek een afspraak</h3>
-        <p>Reserveer eenvoudig jouw afspraak online.</p>
+    <div class="designs-intro-art">
+      <span class="designs-art-main">🌿</span>
+      <span class="designs-art-flower designs-flower-one">🌸</span>
+      <span class="designs-art-flower designs-flower-two">✨</span>
+
+      <strong>Simply Henna</strong>
+      <p>Persoonlijk ontworpen.</p>
     </div>
+
+  </div>
+
+
+  <!-- STIJLEN -->
+  <div class="designs-styles" id="designs-stijlen">
+
+    <div class="designs-section-heading">
+      <span class="designs-label">VIND UW STIJL</span>
+
+      <h2>Welke henna past bij u?</h2>
+
+      <p>
+        Gebruik onze stijlen als inspiratie.
+        Uw uiteindelijke design kan samen met de henna-artiest worden afgestemd.
+      </p>
+    </div>
+
+
+    <div class="designs-style-grid">
+
+      <div class="designs-style-card">
+        <div class="designs-style-visual designs-visual-soft">
+          <span>🌸</span>
+        </div>
+
+        <div class="designs-style-content">
+          <span class="designs-mini-label">SUBTIEL</span>
+
+          <h3>Minimal & zacht</h3>
+
+          <p>
+            Kleine details, fijne lijnen en een rustig design.
+            Perfect als u van subtiele henna houdt.
+          </p>
+
+          <a onclick="openTab('boek-nu')">
+            Kies deze stijl →
+          </a>
+        </div>
+      </div>
+
+
+      <div class="designs-style-card designs-style-featured">
+        <div class="designs-style-visual designs-visual-floral">
+          <span>🌿</span>
+        </div>
+
+        <div class="designs-style-content">
+          <span class="designs-mini-label">POPULAIR</span>
+
+          <h3>Floral & sierlijk</h3>
+
+          <p>
+            Bloemen, bladeren en vloeiende patronen voor een
+            elegante en sierlijke uitstraling.
+          </p>
+
+          <a onclick="openTab('boek-nu')">
+            Kies deze stijl →
+          </a>
+        </div>
+      </div>
+
+
+      <div class="designs-style-card">
+        <div class="designs-style-visual designs-visual-detailed">
+          <span>✨</span>
+        </div>
+
+        <div class="designs-style-content">
+          <span class="designs-mini-label">UITGEBREID</span>
+
+          <h3>Detailed & opvallend</h3>
+
+          <p>
+            Meer details en uitgebreidere patronen voor henna
+            die echt de aandacht mag trekken.
+          </p>
+
+          <a onclick="openTab('boek-nu')">
+            Kies deze stijl →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DESIGN GALLERY PLACEHOLDER -->
+  <div class="designs-gallery">
+
+    <div class="designs-section-heading">
+      <span class="designs-label">SIMPLY HENNA GALLERY</span>
+
+      <h2>Onze henna. Onze designs. 🌸</h2>
+
+      <p>
+        Hier delen we designs die door Simply Henna zijn aangebracht.
+        Onze collectie groeit mee met iedere nieuwe creatie.
+      </p>
+    </div>
+
+
+    <div class="designs-gallery-grid">
+
+      <div class="designs-gallery-item designs-gallery-large">
+        <div class="designs-gallery-placeholder">
+          <span>🌸</span>
+          <strong>Nieuw design volgt</strong>
+          <p>Simply Henna Gallery</p>
+        </div>
+      </div>
+
+      <div class="designs-gallery-item">
+        <div class="designs-gallery-placeholder">
+          <span>🌿</span>
+          <strong>Binnenkort</strong>
+          <p>Nieuwe henna</p>
+        </div>
+      </div>
+
+      <div class="designs-gallery-item">
+        <div class="designs-gallery-placeholder">
+          <span>✨</span>
+          <strong>Meer designs</strong>
+          <p>Volgen binnenkort</p>
+        </div>
+      </div>
+
+      <div class="designs-gallery-item designs-gallery-wide">
+        <div class="designs-gallery-placeholder">
+          <span>🤎</span>
+          <strong>Uw henna hier?</strong>
+          <p>Boek uw afspraak bij Simply Henna.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="designs-gallery-note">
+      <span>📸</span>
+
+      <p>
+        <strong>De gallery wordt binnenkort uitgebreid.</strong><br>
+        Volg Simply Henna op Instagram en TikTok voor nieuwe
+        designs, video's en resultaten.
+      </p>
+
+      <a onclick="openTab('socials')">
+        Bekijk onze socials →
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- CUSTOM DESIGN -->
+  <div class="designs-custom">
+
+    <div class="designs-custom-visual">
+      <span>✍️</span>
+
+      <div class="designs-custom-decoration decoration-one">🌸</div>
+      <div class="designs-custom-decoration decoration-two">🌿</div>
+    </div>
+
+
+    <div class="designs-custom-text">
+      <span class="designs-label">UW IDEE, ONZE HENNA</span>
+
+      <h2>Heeft u zelf een design in gedachten?</h2>
+
+      <p>
+        Misschien heeft u al een foto opgeslagen, een bepaalde stijl
+        in gedachten of een idee dat u graag terug wilt zien in uw henna.
+      </p>
+
+      <p>
+        Tijdens uw boekingsaanvraag kunt u uw wensen aangeven.
+        Simply Henna bekijkt vervolgens samen met u wat mogelijk is.
+      </p>
+
+      <div class="designs-custom-note">
+        <span>💡</span>
+
+        <p>
+          <strong>Goed om te weten</strong><br>
+          Een voorbeeld dient als inspiratie. Omdat henna met de hand
+          wordt aangebracht, kan ieder design uniek zijn.
+        </p>
+      </div>
+
+      <a class="designs-primary" onclick="openTab('boek-nu')">
+        Bespreek uw idee →
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- KEUZEHULP -->
+  <div class="designs-choice">
+
+    <div class="designs-section-heading">
+      <span class="designs-label">NOG GEEN IDEE?</span>
+
+      <h2>Geen stress. Sim helpt u kiezen. 🤎</h2>
+
+      <p>
+        U hoeft niet met een volledig uitgewerkt design naar uw afspraak te komen.
+        Een stijl, sfeer of klein idee is al genoeg om mee te beginnen.
+      </p>
+    </div>
+
+
+    <div class="designs-choice-grid">
+
+      <div class="designs-choice-item">
+        <span class="designs-choice-number">01</span>
+
+        <div>
+          <h3>Kies een sfeer</h3>
+          <p>
+            Subtiel, floral, sierlijk of juist opvallend.
+            Vertel ons wat u mooi vindt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="designs-choice-item">
+        <span class="designs-choice-number">02</span>
+
+        <div>
+          <h3>Deel uw inspiratie</h3>
+          <p>
+            Heeft u voorbeelden? Gebruik deze om uw wensen
+            en favoriete stijl duidelijk te maken.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="designs-choice-item">
+        <span class="designs-choice-number">03</span>
+
+        <div>
+          <h3>Maak het persoonlijk</h3>
+          <p>
+            Sim kijkt naar de mogelijkheden en brengt uw
+            henna met aandacht aan.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SLOT CTA -->
+  <div class="designs-cta">
+
+    <span class="designs-label">UW DESIGN WACHT</span>
+
+    <h2>Al een favoriet gevonden? 🌸</h2>
+
+    <p>
+      Dien uw boekingsaanvraag in en vertel ons welk soort
+      henna-design u mooi vindt.
+    </p>
+
+    <div class="designs-buttons">
+      <a class="designs-primary" onclick="openTab('boek-nu')">
+        📅 Boek uw afspraak
+      </a>
+
+      <a class="designs-secondary" onclick="openTab('prijzen')">
+        Bekijk onze prijzen →
+      </a>
+    </div>
+
+  </div>
+
 </section>
   
 
