@@ -4430,6 +4430,1734 @@
   }
 
 }
+    /* =========================
+   REPORT PAGE
+========================= */
+
+#report {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.report-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.report-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.report-hero .report-label {
+  color: #ffb3d9;
+}
+
+.report-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+  max-width: 820px;
+}
+
+.report-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.report-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.report-primary,
+.report-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.report-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.report-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.report-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.report-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.report-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.report-intro-text {
+  padding: 40px 20px;
+}
+
+.report-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.report-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.report-message-visual {
+  position: absolute;
+  width: 180px;
+  height: 115px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+  top: 55px;
+  right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transform: rotate(7deg);
+}
+
+.report-message-visual::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: -18px;
+  border-width: 20px 5px 0 25px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+.report-message-dot {
+  width: 13px;
+  height: 13px;
+  background: #ff66aa;
+  border-radius: 50%;
+}
+
+.report-art-main {
+  font-size: 75px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.report-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+  z-index: 2;
+}
+
+.report-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+  z-index: 2;
+}
+
+.report-floating {
+  position: absolute;
+  font-size: 35px;
+}
+
+.report-floating-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.report-floating-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.report-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.report-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.report-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* REPORT TYPES */
+
+.report-types {
+  margin: 120px 0;
+}
+
+.report-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.report-type-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 27px;
+  padding: 35px 28px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.report-type-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.16);
+}
+
+.report-type-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #ffd3e7;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.report-type-icon {
+  font-size: 40px;
+}
+
+.report-type-card h3 {
+  color: #660033;
+  font-size: 21px;
+  margin: 22px 0 12px;
+}
+
+.report-type-card p {
+  color: #6d3b53;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ANONYMOUS */
+
+.report-anonymous {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.report-anonymous-visual {
+  position: relative;
+  min-height: 560px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-lock-circle {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 85px;
+}
+
+.report-anonymous-decoration {
+  position: absolute;
+  font-size: 38px;
+}
+
+.report-anonymous-one {
+  top: 55px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.report-anonymous-two {
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(15deg);
+}
+
+.report-anonymous-text {
+  padding: 65px;
+}
+
+.report-anonymous-text h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.report-anonymous-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-anonymous-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.report-anonymous-note > span {
+  font-size: 27px;
+}
+
+.report-anonymous-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.report-anonymous-note strong {
+  color: #660033;
+}
+
+
+/* PROCESS */
+
+.report-process {
+  margin: 120px 0;
+  scroll-margin-top: 100px;
+}
+
+.report-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.report-process-card {
+  position: relative;
+  background: white;
+  border-radius: 28px;
+  padding: 38px 32px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.report-process-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 40px rgba(255, 102, 170, 0.18);
+}
+
+.report-process-featured {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border: 2px solid #ffb3d9;
+  transform: translateY(-15px);
+}
+
+.report-process-featured:hover {
+  transform: translateY(-22px);
+}
+
+.report-process-number {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  color: #ffe6f0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.report-process-icon {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.report-process-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 0 0 13px;
+}
+
+.report-process-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* SUBMIT */
+
+.report-submit {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+  margin: 130px 0;
+  scroll-margin-top: 100px;
+}
+
+.report-submit-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 22px;
+}
+
+.report-submit-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-submit-tip {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.report-submit-tip > span {
+  font-size: 27px;
+}
+
+.report-submit-tip p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.report-submit-tip strong {
+  color: #660033;
+}
+
+.report-form-card {
+  background: white;
+  border-radius: 35px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ffe6f0;
+}
+
+.report-form-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  transform: rotate(-5deg);
+}
+
+.report-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.report-form-card h3 {
+  color: #660033;
+  font-size: 29px;
+  margin: 10px 0 15px;
+}
+
+.report-form-card p {
+  color: #6d3b53;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.report-form-button {
+  display: block;
+}
+
+.report-form-note {
+  display: block;
+  color: #9b6b82;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+/* PRIVACY */
+
+.report-privacy {
+  display: grid;
+  grid-template-columns: auto 1.2fr 0.8fr;
+  gap: 35px;
+  align-items: center;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 55px;
+  margin: 120px 0;
+}
+
+.report-privacy-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.report-privacy .report-mini-label {
+  color: #ffb3d9;
+}
+
+.report-privacy-text h2 {
+  color: white;
+  font-size: 32px;
+  margin: 7px 0 15px;
+}
+
+.report-privacy-text p {
+  color: #ffe6f0;
+  line-height: 1.7;
+}
+
+.report-privacy-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.report-privacy-box > span {
+  font-size: 35px;
+}
+
+.report-privacy-box p {
+  color: white;
+  line-height: 1.7;
+}
+
+.report-privacy-box strong {
+  color: #ffb3d9;
+}
+
+.report-privacy-box a {
+  color: #ffb3d9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* RIGHT PAGE */
+
+.report-not-for {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.report-not-for-main h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.report-not-for-main p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-not-for-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-option-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.report-option-card:hover {
+  transform: translateX(7px);
+  box-shadow: 0 10px 25px rgba(255, 102, 170, 0.15);
+}
+
+.report-option-card > span {
+  font-size: 31px;
+}
+
+.report-option-card div {
+  flex: 1;
+}
+
+.report-option-card strong {
+  color: #660033;
+  font-size: 17px;
+}
+
+.report-option-card p {
+  color: #8b6075;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.report-option-card b {
+  color: #ff2d8d;
+  font-size: 22px;
+}
+
+
+/* CONTACT */
+
+.report-contact {
+  text-align: center;
+  max-width: 850px;
+  margin: 120px auto;
+  background: white;
+  border-radius: 35px;
+  padding: 60px 45px;
+  border: 2px solid #ffe6f0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.report-contact h2 {
+  color: #660033;
+  font-size: 38px;
+  margin: 5px 0 17px;
+}
+
+.report-contact p {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+
+/* CTA */
+
+.report-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.report-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.report-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .report-intro,
+  .report-anonymous,
+  .report-submit,
+  .report-not-for {
+    grid-template-columns: 1fr;
+  }
+
+  .report-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-process-featured,
+  .report-process-featured:hover {
+    transform: none;
+  }
+
+  .report-anonymous-visual {
+    min-height: 320px;
+  }
+
+  .report-privacy {
+    grid-template-columns: auto 1fr;
+  }
+
+  .report-privacy-box {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #report {
+    padding: 15px 10px 100px;
+  }
+
+  .report-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .report-hero h1 {
+    font-size: 39px;
+  }
+
+  .report-hero p {
+    font-size: 16px;
+  }
+
+  .report-buttons {
+    flex-direction: column;
+  }
+
+  .report-primary,
+  .report-secondary {
+    text-align: center;
+  }
+
+  .report-intro,
+  .report-types,
+  .report-anonymous,
+  .report-process,
+  .report-submit,
+  .report-privacy,
+  .report-not-for,
+  .report-contact {
+    margin: 70px 0;
+  }
+
+  .report-intro-text {
+    padding: 10px 5px;
+  }
+
+  .report-intro-text h2,
+  .report-section-heading h2,
+  .report-anonymous-text h2,
+  .report-submit-text h2,
+  .report-not-for-main h2,
+  .report-contact h2,
+  .report-cta h2 {
+    font-size: 30px;
+  }
+
+  .report-intro-art {
+    min-height: 310px;
+  }
+
+  .report-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-anonymous-visual {
+    min-height: 270px;
+  }
+
+  .report-lock-circle {
+    width: 155px;
+    height: 155px;
+    font-size: 65px;
+  }
+
+  .report-anonymous-text {
+    padding: 38px 25px;
+  }
+
+  .report-form-card {
+    padding: 40px 25px;
+  }
+
+  .report-privacy {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  .report-privacy-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .report-privacy-box {
+    grid-column: auto;
+  }
+
+  .report-contact {
+    padding: 45px 25px;
+  }
+
+  .report-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
+    /* =========================
+   REPORT PAGE
+========================= */
+
+#report {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.report-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.report-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.report-hero .report-label {
+  color: #ffb3d9;
+}
+
+.report-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+  max-width: 820px;
+}
+
+.report-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.report-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.report-primary,
+.report-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.report-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.report-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.report-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.report-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.report-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.report-intro-text {
+  padding: 40px 20px;
+}
+
+.report-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.report-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.report-message-visual {
+  position: absolute;
+  width: 180px;
+  height: 115px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+  top: 55px;
+  right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transform: rotate(7deg);
+}
+
+.report-message-visual::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: -18px;
+  border-width: 20px 5px 0 25px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+.report-message-dot {
+  width: 13px;
+  height: 13px;
+  background: #ff66aa;
+  border-radius: 50%;
+}
+
+.report-art-main {
+  font-size: 75px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.report-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+  z-index: 2;
+}
+
+.report-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+  z-index: 2;
+}
+
+.report-floating {
+  position: absolute;
+  font-size: 35px;
+}
+
+.report-floating-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.report-floating-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.report-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.report-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.report-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* REPORT TYPES */
+
+.report-types {
+  margin: 120px 0;
+}
+
+.report-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.report-type-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 27px;
+  padding: 35px 28px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.report-type-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.16);
+}
+
+.report-type-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #ffd3e7;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.report-type-icon {
+  font-size: 40px;
+}
+
+.report-type-card h3 {
+  color: #660033;
+  font-size: 21px;
+  margin: 22px 0 12px;
+}
+
+.report-type-card p {
+  color: #6d3b53;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ANONYMOUS */
+
+.report-anonymous {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.report-anonymous-visual {
+  position: relative;
+  min-height: 560px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-lock-circle {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 85px;
+}
+
+.report-anonymous-decoration {
+  position: absolute;
+  font-size: 38px;
+}
+
+.report-anonymous-one {
+  top: 55px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.report-anonymous-two {
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(15deg);
+}
+
+.report-anonymous-text {
+  padding: 65px;
+}
+
+.report-anonymous-text h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.report-anonymous-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-anonymous-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.report-anonymous-note > span {
+  font-size: 27px;
+}
+
+.report-anonymous-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.report-anonymous-note strong {
+  color: #660033;
+}
+
+
+/* PROCESS */
+
+.report-process {
+  margin: 120px 0;
+  scroll-margin-top: 100px;
+}
+
+.report-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.report-process-card {
+  position: relative;
+  background: white;
+  border-radius: 28px;
+  padding: 38px 32px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.report-process-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 40px rgba(255, 102, 170, 0.18);
+}
+
+.report-process-featured {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border: 2px solid #ffb3d9;
+  transform: translateY(-15px);
+}
+
+.report-process-featured:hover {
+  transform: translateY(-22px);
+}
+
+.report-process-number {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  color: #ffe6f0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.report-process-icon {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.report-process-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 0 0 13px;
+}
+
+.report-process-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* SUBMIT */
+
+.report-submit {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+  margin: 130px 0;
+  scroll-margin-top: 100px;
+}
+
+.report-submit-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 22px;
+}
+
+.report-submit-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-submit-tip {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.report-submit-tip > span {
+  font-size: 27px;
+}
+
+.report-submit-tip p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.report-submit-tip strong {
+  color: #660033;
+}
+
+.report-form-card {
+  background: white;
+  border-radius: 35px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ffe6f0;
+}
+
+.report-form-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  transform: rotate(-5deg);
+}
+
+.report-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.report-form-card h3 {
+  color: #660033;
+  font-size: 29px;
+  margin: 10px 0 15px;
+}
+
+.report-form-card p {
+  color: #6d3b53;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.report-form-button {
+  display: block;
+}
+
+.report-form-note {
+  display: block;
+  color: #9b6b82;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+/* PRIVACY */
+
+.report-privacy {
+  display: grid;
+  grid-template-columns: auto 1.2fr 0.8fr;
+  gap: 35px;
+  align-items: center;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 55px;
+  margin: 120px 0;
+}
+
+.report-privacy-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.report-privacy .report-mini-label {
+  color: #ffb3d9;
+}
+
+.report-privacy-text h2 {
+  color: white;
+  font-size: 32px;
+  margin: 7px 0 15px;
+}
+
+.report-privacy-text p {
+  color: #ffe6f0;
+  line-height: 1.7;
+}
+
+.report-privacy-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.report-privacy-box > span {
+  font-size: 35px;
+}
+
+.report-privacy-box p {
+  color: white;
+  line-height: 1.7;
+}
+
+.report-privacy-box strong {
+  color: #ffb3d9;
+}
+
+.report-privacy-box a {
+  color: #ffb3d9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* RIGHT PAGE */
+
+.report-not-for {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.report-not-for-main h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.report-not-for-main p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.report-not-for-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-option-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.report-option-card:hover {
+  transform: translateX(7px);
+  box-shadow: 0 10px 25px rgba(255, 102, 170, 0.15);
+}
+
+.report-option-card > span {
+  font-size: 31px;
+}
+
+.report-option-card div {
+  flex: 1;
+}
+
+.report-option-card strong {
+  color: #660033;
+  font-size: 17px;
+}
+
+.report-option-card p {
+  color: #8b6075;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.report-option-card b {
+  color: #ff2d8d;
+  font-size: 22px;
+}
+
+
+/* CONTACT */
+
+.report-contact {
+  text-align: center;
+  max-width: 850px;
+  margin: 120px auto;
+  background: white;
+  border-radius: 35px;
+  padding: 60px 45px;
+  border: 2px solid #ffe6f0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.report-contact h2 {
+  color: #660033;
+  font-size: 38px;
+  margin: 5px 0 17px;
+}
+
+.report-contact p {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+
+/* CTA */
+
+.report-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.report-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.report-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .report-intro,
+  .report-anonymous,
+  .report-submit,
+  .report-not-for {
+    grid-template-columns: 1fr;
+  }
+
+  .report-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-process-featured,
+  .report-process-featured:hover {
+    transform: none;
+  }
+
+  .report-anonymous-visual {
+    min-height: 320px;
+  }
+
+  .report-privacy {
+    grid-template-columns: auto 1fr;
+  }
+
+  .report-privacy-box {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #report {
+    padding: 15px 10px 100px;
+  }
+
+  .report-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .report-hero h1 {
+    font-size: 39px;
+  }
+
+  .report-hero p {
+    font-size: 16px;
+  }
+
+  .report-buttons {
+    flex-direction: column;
+  }
+
+  .report-primary,
+  .report-secondary {
+    text-align: center;
+  }
+
+  .report-intro,
+  .report-types,
+  .report-anonymous,
+  .report-process,
+  .report-submit,
+  .report-privacy,
+  .report-not-for,
+  .report-contact {
+    margin: 70px 0;
+  }
+
+  .report-intro-text {
+    padding: 10px 5px;
+  }
+
+  .report-intro-text h2,
+  .report-section-heading h2,
+  .report-anonymous-text h2,
+  .report-submit-text h2,
+  .report-not-for-main h2,
+  .report-contact h2,
+  .report-cta h2 {
+    font-size: 30px;
+  }
+
+  .report-intro-art {
+    min-height: 310px;
+  }
+
+  .report-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-anonymous-visual {
+    min-height: 270px;
+  }
+
+  .report-lock-circle {
+    width: 155px;
+    height: 155px;
+    font-size: 65px;
+  }
+
+  .report-anonymous-text {
+    padding: 38px 25px;
+  }
+
+  .report-form-card {
+    padding: 40px 25px;
+  }
+
+  .report-privacy {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  .report-privacy-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .report-privacy-box {
+    grid-column: auto;
+  }
+
+  .report-contact {
+    padding: 45px 25px;
+  }
+
+  .report-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 
@@ -7444,89 +9172,826 @@
   
 </section>
 
-  <section id="reviews">
-  <h1>⭐ Reviews</h1>
+<section id="reviews">
 
-  <p>Lees wat anderen van Simply Henna vinden! 🌸</p>
+  <!-- REVIEWS HERO -->
+  <div class="reviews-hero">
 
-  <div class="grid">
+    <span class="reviews-label">⭐ REVIEWS</span>
 
-    <div class="card">
-      <h3>⭐⭐⭐⭐⭐</h3>
-      <p>"Super mooie henna en heel vriendelijk!"</p>
-      <p><strong>— Rasha</strong></p>
+    <h1>Uw ervaring.<br>Uw woorden. 🌸</h1>
+
+    <p>
+      Reviews helpen anderen om kennis te maken met Simply Henna
+      en helpen ons om onze dienstverlening verder te verbeteren.
+    </p>
+
+    <div class="reviews-buttons">
+
+      <a class="reviews-primary" href="#review-delen">
+        ⭐ Deel uw ervaring
+      </a>
+
+      <a class="reviews-secondary" href="#review-overzicht">
+        Bekijk reviews ↓
+      </a>
+
     </div>
 
-    <div class="card">
-      <h3>⭐⭐⭐⭐⭐</h3>
-      <p>"Ik ben echt heel blij met het resultaat. Zeker een aanrader!"</p>
-      <p><strong>— Hanane</strong></p>
-    </div>
-
-    <div class="card">
-      <h3>⭐⭐⭐⭐⭐</h3>
-      <p>"Mooie designs en een fijne ervaring."</p>
-      <p><strong>— Samira</strong></p>
-    </div>
-
-        <div class="card">
-      <h3>⭐⭐⭐⭐⭐</h3>
-      <p>"Prachtig"</p>
-      <p><strong>— Julie</strong></p>
-    </div>
-
-    <h2>Heeft u ervaring met Simply Henna?</h2>
-    <p>Wij horen graag wat u van onze service en henna vindt! 💕</p>
-
-    <a class="medeweb-btn"
-       href="https://docs.google.com/forms/d/e/1FAIpQLScSIZD6Xz7IsPEDshL7FTAGA4rx-K3RMl0s8Wdr7Pnq75qPFw/viewform?usp=publish-editor"
-       target="_blank"
-       rel="noopener noreferrer">
-      ⭐ Schrijf een review
-    </a>
   </div>
-</section>
 
-<section id="report">
-  <h1>⚠️ Rapporteer een probleem</h1>
 
-  <p>
-    Heeft u een probleem gevonden of is er iets wat volgens u beter kan?
-    Laat het ons gerust weten. Uw feedback helpt Simply Henna te verbeteren! 🌸
-  </p>
+  <!-- INTRO -->
+  <div class="reviews-intro">
 
-  <div class="grid">
+    <div class="reviews-intro-text">
 
-    <div class="card">
-      <h3>📝 Meld een probleem</h3>
+      <span class="reviews-label">ECHTE ERVARINGEN</span>
+
+      <h2>Simply Henna door de ogen van onze klanten. 🤎</h2>
 
       <p>
-        Vul ons formulier in om een probleem, fout of verbeterpunt te melden.
-        U mag het formulier ook anoniem invullen.
+        Een henna-afspraak is voor iedereen anders.
+        Daarom vinden wij het waardevol wanneer klanten hun
+        eigen ervaring met Simply Henna delen.
       </p>
 
-      <a class="medeweb-btn"
-         href="https://docs.google.com/forms/d/e/1FAIpQLSf-b9C0QNgzntwcA-qZKbUzeoMJE55OMRtVqYQeCIZyiq0CBw/viewform?usp=dialog"
+      <p>
+        Van het contact rondom een afspraak tot het uiteindelijke
+        henna-design: uw feedback helpt toekomstige klanten én ons team.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-intro-art">
+
+      <div class="reviews-stars">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+      </div>
+
+      <span class="reviews-art-main">💬</span>
+
+      <strong>Uw mening telt.</strong>
+
+      <p>Eerlijk, persoonlijk en waardevol.</p>
+
+      <span class="reviews-floating reviews-floating-one">🌸</span>
+      <span class="reviews-floating reviews-floating-two">✨</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- REVIEW OVERVIEW -->
+  <div class="reviews-overview" id="review-overzicht">
+
+    <div class="reviews-section-heading">
+
+      <span class="reviews-label">ERVARINGEN MET SIMPLY HENNA</span>
+
+      <h2>Wat klanten over ons delen.</h2>
+
+      <p>
+        Hier delen wij ervaringen die klanten over Simply Henna
+        met ons hebben gedeeld.
+      </p>
+
+    </div>
+
+
+    <!-- EMPTY STATE: GEBRUIKEN ZOLANG ER NOG GEEN REVIEWS ZIJN -->
+    <div class="reviews-empty">
+
+      <div class="reviews-empty-icon">🌸</div>
+
+      <span class="reviews-mini-label">SIMPLY HENNA GROEIT</span>
+
+      <h3>Onze reviews groeien met ons mee.</h3>
+
+      <p>
+        Simply Henna is in ontwikkeling. Zodra klanten hun ervaring
+        met ons delen en toestemming geven voor publicatie,
+        kunnen geselecteerde reviews hier worden weergegeven.
+      </p>
+
+      <a class="reviews-primary" href="#review-delen">
+        Wees één van de eersten →
+      </a>
+
+    </div>
+
+
+    <!--
+    ============================================================
+    ECHTE REVIEWS HIER PLAKKEN ZODRA JULLIE DIE HEBBEN
+
+    BELANGRIJK:
+    - alleen echte ervaringen
+    - pas naam aan naar wat klant voor publicatie heeft toegestaan
+    - verander de inhoud van een review niet inhoudelijk
+    ============================================================
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+
+        <div class="review-card-top">
+
+          <div class="review-stars">
+            ★★★★★
+          </div>
+
+          <span class="review-quote-mark">“</span>
+
+        </div>
+
+        <blockquote>
+          PLAK HIER DE ECHTE REVIEW VAN DE KLANT.
+        </blockquote>
+
+        <div class="review-person">
+
+          <div class="review-avatar">
+            A
+          </div>
+
+          <div>
+            <strong>Naam klant</strong>
+            <span>Klant van Simply Henna</span>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+    -->
+
+  </div>
+
+
+  <!-- WHY REVIEWS -->
+  <div class="reviews-why">
+
+    <div class="reviews-section-heading">
+
+      <span class="reviews-label">WAAROM UW REVIEW HELPT</span>
+
+      <h2>Een klein bericht kan veel betekenen. ✨</h2>
+
+      <p>
+        Uw ervaring helpt Simply Henna én mensen die
+        overwegen een boekingsaanvraag in te dienen.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-why-grid">
+
+      <div class="reviews-why-card">
+
+        <span>🌸</span>
+
+        <h3>Help nieuwe klanten</h3>
+
+        <p>
+          Uw ervaring kan anderen een beter beeld geven
+          van Simply Henna en onze dienstverlening.
+        </p>
+
+      </div>
+
+
+      <div class="reviews-why-card reviews-why-featured">
+
+        <span>💬</span>
+
+        <h3>Deel uw ervaring</h3>
+
+        <p>
+          Vertel in uw eigen woorden hoe u het contact,
+          de afspraak of uw henna heeft ervaren.
+        </p>
+
+      </div>
+
+
+      <div class="reviews-why-card">
+
+        <span>🌿</span>
+
+        <h3>Help ons verbeteren</h3>
+
+        <p>
+          Feedback kan ons helpen om te kijken wat goed gaat
+          en waar Simply Henna zich verder kan ontwikkelen.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SHARE REVIEW -->
+  <div class="reviews-share" id="review-delen">
+
+    <div class="reviews-share-text">
+
+      <span class="reviews-label">DEEL UW ERVARING</span>
+
+      <h2>Hoe heeft u Simply Henna ervaren? ⭐</h2>
+
+      <p>
+        Heeft u gebruikgemaakt van een dienst van Simply Henna?
+        Dan horen wij graag hoe u uw ervaring heeft beleefd.
+      </p>
+
+      <p>
+        U kunt iets vertellen over het contact, de afspraak,
+        het henna-design of uw algemene ervaring met Simply Henna.
+      </p>
+
+
+      <div class="reviews-share-note">
+
+        <span>🤎</span>
+
+        <p>
+          <strong>Uw eigen ervaring staat centraal.</strong><br>
+          Deel uw eerlijke mening in uw eigen woorden.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="reviews-share-card">
+
+      <div class="reviews-share-icon">⭐</div>
+
+      <span class="reviews-mini-label">REVIEW INSTUREN</span>
+
+      <h3>Vertel ons uw ervaring.</h3>
+
+      <p>
+        Gebruik ons reviewformulier om uw ervaring
+        met Simply Henna met ons te delen.
+      </p>
+
+      <!-- VERVANG # MET JOUW REVIEW GOOGLE FORM LINK -->
+      <a class="reviews-primary reviews-form-button"
+         href="#"
          target="_blank"
          rel="noopener noreferrer">
-        📝 Open het formulier
+        ⭐ Review insturen
       </a>
-    </div>
 
-    <div class="card">
-      <h3>📩 Liever mailen?</h3>
+      <span class="reviews-form-note">
+        U wordt doorgestuurd naar ons reviewformulier.
+      </span>
 
-      <p>
-        U kunt uw probleem of verbeterpunt ook rechtstreeks naar het management van Simply Henna sturen.
-      </p>
-
-      <a class="medeweb-btn"
-         href="mailto:simplyhennamanagement@gmail.com?subject=Probleem%20melden%20-%20Simply%20Henna">
-        ✉️ Stuur een e-mail
-      </a>
     </div>
 
   </div>
+
+
+  <!-- REVIEW POLICY -->
+  <div class="reviews-policy">
+
+    <div class="reviews-policy-icon">✓</div>
+
+    <div class="reviews-policy-text">
+
+      <span class="reviews-mini-label">OVER ONZE REVIEWS</span>
+
+      <h2>Echte ervaringen, duidelijk weergegeven.</h2>
+
+      <p>
+        Reviews op deze pagina zijn bedoeld om ervaringen van klanten
+        met Simply Henna weer te geven.
+      </p>
+
+      <p>
+        Simply Henna publiceert geen verzonnen klantervaringen als echte
+        reviews. Een ingestuurde review wordt niet automatisch op de
+        website geplaatst.
+      </p>
+
+      <p>
+        Wanneer een review wordt gepubliceerd, kan deze waar nodig
+        beperkt worden aangepast voor spelling, leesbaarheid of het
+        beschermen van persoonsgegevens, zonder de inhoudelijke
+        strekking van de ervaring te veranderen.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- FEEDBACK VS REVIEW -->
+  <div class="reviews-feedback">
+
+    <div class="reviews-feedback-main">
+
+      <span class="reviews-label">REVIEW OF VERBETERPUNT?</span>
+
+      <h2>Niet alle feedback hoeft openbaar. 💬</h2>
+
+      <p>
+        Wilt u uw ervaring delen als review? Gebruik dan het reviewformulier.
+      </p>
+
+      <p>
+        Heeft u een probleem gevonden, een verbeterpunt of wilt u iets
+        rechtstreeks bij het management melden? Gebruik dan onze
+        aparte meldpagina.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-feedback-options">
+
+      <a class="reviews-feedback-card" href="#review-delen">
+
+        <span>⭐</span>
+
+        <div>
+          <strong>Een review delen</strong>
+          <p>Deel uw ervaring met Simply Henna.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+
+      <a class="reviews-feedback-card" onclick="openTab('report')">
+
+        <span>💬</span>
+
+        <div>
+          <strong>Verbeterpunt melden</strong>
+          <p>Stuur feedback naar het management.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="reviews-cta">
+
+    <span class="reviews-label">NOG GEEN ERVARING MET ONS?</span>
+
+    <h2>Misschien begint die binnenkort. 🌸</h2>
+
+    <p>
+      Bekijk onze henna-designs of dien eenvoudig
+      een boekingsaanvraag in bij Simply Henna.
+    </p>
+
+    <div class="reviews-buttons">
+
+      <a class="reviews-primary" onclick="openTab('boek-nu')">
+        📅 Boekingsaanvraag indienen
+      </a>
+
+      <a class="reviews-secondary" onclick="openTab('designs')">
+        Bekijk onze designs →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="reviews">
+
+  <!-- REVIEWS HERO -->
+  <div class="reviews-hero">
+
+    <span class="reviews-label">⭐ REVIEWS</span>
+
+    <h1>Uw ervaring.<br>Uw woorden. 🌸</h1>
+
+    <p>
+      Reviews helpen anderen om kennis te maken met Simply Henna
+      en helpen ons om onze dienstverlening verder te verbeteren.
+    </p>
+
+    <div class="reviews-buttons">
+
+      <a class="reviews-primary" href="#review-delen">
+        ⭐ Deel uw ervaring
+      </a>
+
+      <a class="reviews-secondary" href="#review-overzicht">
+        Bekijk reviews ↓
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="reviews-intro">
+
+    <div class="reviews-intro-text">
+
+      <span class="reviews-label">ECHTE ERVARINGEN</span>
+
+      <h2>Simply Henna door de ogen van onze klanten. 🤎</h2>
+
+      <p>
+        Een henna-afspraak is voor iedereen anders.
+        Daarom vinden wij het waardevol wanneer klanten hun
+        eigen ervaring met Simply Henna delen.
+      </p>
+
+      <p>
+        Van het contact rondom een afspraak tot het uiteindelijke
+        henna-design: uw feedback helpt toekomstige klanten én ons team.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-intro-art">
+
+      <div class="reviews-stars">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+      </div>
+
+      <span class="reviews-art-main">💬</span>
+
+      <strong>Uw mening telt.</strong>
+
+      <p>Eerlijk, persoonlijk en waardevol.</p>
+
+      <span class="reviews-floating reviews-floating-one">🌸</span>
+      <span class="reviews-floating reviews-floating-two">✨</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- REVIEW OVERVIEW -->
+  <div class="reviews-overview" id="review-overzicht">
+
+    <div class="reviews-section-heading">
+
+      <span class="reviews-label">ERVARINGEN MET SIMPLY HENNA</span>
+
+      <h2>Wat klanten over ons delen.</h2>
+
+      <p>
+        Hier delen wij ervaringen die klanten over Simply Henna
+        met ons hebben gedeeld.
+      </p>
+
+    </div>
+
+
+    <!-- EMPTY STATE: GEBRUIKEN ZOLANG ER NOG GEEN REVIEWS ZIJN -->
+    <div class="reviews-empty">
+
+      <div class="reviews-empty-icon">🌸</div>
+
+      <span class="reviews-mini-label">SIMPLY HENNA GROEIT</span>
+
+      <h3>Onze reviews groeien met ons mee.</h3>
+
+      <p>
+        Simply Henna is in ontwikkeling. Zodra klanten hun ervaring
+        met ons delen en toestemming geven voor publicatie,
+        kunnen geselecteerde reviews hier worden weergegeven.
+      </p>
+
+      <a class="reviews-primary" href="#review-delen">
+        Wees één van de eersten →
+      </a>
+
+    </div>
+
+
+    <!--
+    ============================================================
+    ECHTE REVIEWS HIER PLAKKEN ZODRA JULLIE DIE HEBBEN
+
+    BELANGRIJK:
+    - alleen echte ervaringen
+    - pas naam aan naar wat klant voor publicatie heeft toegestaan
+    - verander de inhoud van een review niet inhoudelijk
+    ============================================================
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+
+        <div class="review-card-top">
+
+          <div class="review-stars">
+            ★★★★★
+          </div>
+
+          <span class="review-quote-mark">“</span>
+
+        </div>
+
+        <blockquote>
+          PLAK HIER DE ECHTE REVIEW VAN DE KLANT.
+        </blockquote>
+
+        <div class="review-person">
+
+          <div class="review-avatar">
+            A
+          </div>
+
+          <div>
+            <strong>Naam klant</strong>
+            <span>Klant van Simply Henna</span>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+    -->
+
+  </div>
+
+
+  <!-- WHY REVIEWS -->
+  <div class="reviews-why">
+
+    <div class="reviews-section-heading">
+
+      <span class="reviews-label">WAAROM UW REVIEW HELPT</span>
+
+      <h2>Een klein bericht kan veel betekenen. ✨</h2>
+
+      <p>
+        Uw ervaring helpt Simply Henna én mensen die
+        overwegen een boekingsaanvraag in te dienen.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-why-grid">
+
+      <div class="reviews-why-card">
+
+        <span>🌸</span>
+
+        <h3>Help nieuwe klanten</h3>
+
+        <p>
+          Uw ervaring kan anderen een beter beeld geven
+          van Simply Henna en onze dienstverlening.
+        </p>
+
+      </div>
+
+
+      <div class="reviews-why-card reviews-why-featured">
+
+        <span>💬</span>
+
+        <h3>Deel uw ervaring</h3>
+
+        <p>
+          Vertel in uw eigen woorden hoe u het contact,
+          de afspraak of uw henna heeft ervaren.
+        </p>
+
+      </div>
+
+
+      <div class="reviews-why-card">
+
+        <span>🌿</span>
+
+        <h3>Help ons verbeteren</h3>
+
+        <p>
+          Feedback kan ons helpen om te kijken wat goed gaat
+          en waar Simply Henna zich verder kan ontwikkelen.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SHARE REVIEW -->
+  <div class="reviews-share" id="review-delen">
+
+    <div class="reviews-share-text">
+
+      <span class="reviews-label">DEEL UW ERVARING</span>
+
+      <h2>Hoe heeft u Simply Henna ervaren? ⭐</h2>
+
+      <p>
+        Heeft u gebruikgemaakt van een dienst van Simply Henna?
+        Dan horen wij graag hoe u uw ervaring heeft beleefd.
+      </p>
+
+      <p>
+        U kunt iets vertellen over het contact, de afspraak,
+        het henna-design of uw algemene ervaring met Simply Henna.
+      </p>
+
+
+      <div class="reviews-share-note">
+
+        <span>🤎</span>
+
+        <p>
+          <strong>Uw eigen ervaring staat centraal.</strong><br>
+          Deel uw eerlijke mening in uw eigen woorden.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="reviews-share-card">
+
+      <div class="reviews-share-icon">⭐</div>
+
+      <span class="reviews-mini-label">REVIEW INSTUREN</span>
+
+      <h3>Vertel ons uw ervaring.</h3>
+
+      <p>
+        Gebruik ons reviewformulier om uw ervaring
+        met Simply Henna met ons te delen.
+      </p>
+
+      <!-- VERVANG # MET JOUW REVIEW GOOGLE FORM LINK -->
+      <a class="reviews-primary reviews-form-button"
+         href="#"
+         target="_blank"
+         rel="noopener noreferrer">
+        ⭐ Review insturen
+      </a>
+
+      <span class="reviews-form-note">
+        U wordt doorgestuurd naar ons reviewformulier.
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- REVIEW POLICY -->
+  <div class="reviews-policy">
+
+    <div class="reviews-policy-icon">✓</div>
+
+    <div class="reviews-policy-text">
+
+      <span class="reviews-mini-label">OVER ONZE REVIEWS</span>
+
+      <h2>Echte ervaringen, duidelijk weergegeven.</h2>
+
+      <p>
+        Reviews op deze pagina zijn bedoeld om ervaringen van klanten
+        met Simply Henna weer te geven.
+      </p>
+
+      <p>
+        Simply Henna publiceert geen verzonnen klantervaringen als echte
+        reviews. Een ingestuurde review wordt niet automatisch op de
+        website geplaatst.
+      </p>
+
+      <p>
+        Wanneer een review wordt gepubliceerd, kan deze waar nodig
+        beperkt worden aangepast voor spelling, leesbaarheid of het
+        beschermen van persoonsgegevens, zonder de inhoudelijke
+        strekking van de ervaring te veranderen.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- FEEDBACK VS REVIEW -->
+  <div class="reviews-feedback">
+
+    <div class="reviews-feedback-main">
+
+      <span class="reviews-label">REVIEW OF VERBETERPUNT?</span>
+
+      <h2>Niet alle feedback hoeft openbaar. 💬</h2>
+
+      <p>
+        Wilt u uw ervaring delen als review? Gebruik dan het reviewformulier.
+      </p>
+
+      <p>
+        Heeft u een probleem gevonden, een verbeterpunt of wilt u iets
+        rechtstreeks bij het management melden? Gebruik dan onze
+        aparte meldpagina.
+      </p>
+
+    </div>
+
+
+    <div class="reviews-feedback-options">
+
+      <a class="reviews-feedback-card" href="#review-delen">
+
+        <span>⭐</span>
+
+        <div>
+          <strong>Een review delen</strong>
+          <p>Deel uw ervaring met Simply Henna.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+
+      <a class="reviews-feedback-card" onclick="openTab('report')">
+
+        <span>💬</span>
+
+        <div>
+          <strong>Verbeterpunt melden</strong>
+          <p>Stuur feedback naar het management.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="reviews-cta">
+
+    <span class="reviews-label">NOG GEEN ERVARING MET ONS?</span>
+
+    <h2>Misschien begint die binnenkort. 🌸</h2>
+
+    <p>
+      Bekijk onze henna-designs of dien eenvoudig
+      een boekingsaanvraag in bij Simply Henna.
+    </p>
+
+    <div class="reviews-buttons">
+
+      <a class="reviews-primary" onclick="openTab('boek-nu')">
+        📅 Boekingsaanvraag indienen
+      </a>
+
+      <a class="reviews-secondary" onclick="openTab('designs')">
+        Bekijk onze designs →
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
 
 
