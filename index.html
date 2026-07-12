@@ -184,6 +184,249 @@
     line-height:1.6;
     color:#555;
 }
+    /* HOMEPAGE */
+
+#home {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px;
+}
+
+
+/* HERO */
+
+.home-hero {
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  border-radius: 30px;
+  padding: 70px 50px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(255, 102, 170, 0.15);
+}
+
+.home-label {
+  display: inline-block;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.home-hero h1 {
+  color: #660033;
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+
+.home-hero p {
+  color: #6d3b53;
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+
+/* KNOPPEN */
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.home-primary,
+.home-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.home-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.home-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.home-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.home-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.home-intro {
+  text-align: center;
+  margin: 70px auto 35px;
+  max-width: 700px;
+}
+
+.home-intro h2 {
+  color: #660033;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.home-intro p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* HOMEPAGE CARDS */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.home-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: 0.25s;
+  border: 2px solid transparent;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(255, 102, 170, 0.2);
+  border-color: #ffb3d9;
+}
+
+.home-card-highlight {
+  background: linear-gradient(135deg, #fff0f6, #ffffff);
+  border-color: #ffb3d9;
+}
+
+.home-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.home-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.home-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.home-card span {
+  color: #ff2d8d;
+  font-weight: bold;
+}
+
+
+/* CTA ONDERAAN */
+
+.home-cta {
+  text-align: center;
+  margin-top: 70px;
+  padding: 50px 25px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  border-radius: 25px;
+}
+
+.home-cta h2 {
+  color: #660033;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.home-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-hero h1 {
+    font-size: 42px;
+  }
+}
+
+
+/* MOBIEL */
+
+@media (max-width: 600px) {
+  #home {
+    padding: 15px 10px;
+  }
+
+  .home-hero {
+    padding: 45px 20px;
+    border-radius: 20px;
+  }
+
+  .home-hero h1 {
+    font-size: 36px;
+  }
+
+  .home-hero p {
+    font-size: 16px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-card {
+    padding: 23px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+
+  .home-primary,
+  .home-secondary {
+    text-align: center;
+  }
+
+  .home-intro {
+    margin-top: 50px;
+  }
+
+  .home-intro h2 {
+    font-size: 28px;
+  }
+}
   </style>
 </head>
 <body>
@@ -204,10 +447,178 @@
     <a onclick="openTab('medeweb')">medeweb</a>
   </nav>
   
-    <section id="home" class="active">
-    <h2>Simrans verhaal</h2>
-    <p>hier komt een prachtige nieuwe HOME page! tot snel!</p>
-  </section>
+<section id="home" class="active">
+
+  <div class="home-hero">
+    <span class="home-label">🌸 WELKOM BIJ SIMPLY HENNA</span>
+
+    <h1>Henna met passie,<br>speciaal voor u.</h1>
+
+    <p>
+      Welkom bij Simply Henna! Ontdek onze henna-designs,
+      bekijk onze prijzen of boek eenvoudig uw afspraak.
+    </p>
+
+    <div class="home-buttons">
+      <a class="home-primary" onclick="openTab('boek-nu')">
+        📅 Boek een afspraak
+      </a>
+
+      <a class="home-secondary" onclick="openTab('designs')">
+        Bekijk onze designs →
+      </a>
+    </div>
+  </div>
+
+
+  <div class="home-intro">
+    <h2>Ontdek Simply Henna 🌸</h2>
+
+    <p>
+      Alles wat u nodig heeft op één plek. Bekijk onze diensten,
+      leer ons team kennen en blijf op de hoogte via onze socials.
+    </p>
+  </div>
+
+
+  <div class="home-grid">
+
+    <div class="home-card" onclick="openTab('designs')">
+      <div class="home-icon">🌸</div>
+
+      <h3>Onze designs</h3>
+
+      <p>
+        Ontdek onze henna-designs en bekijk wat Simply Henna te bieden heeft.
+      </p>
+
+      <span>Bekijk designs →</span>
+    </div>
+
+
+    <div class="home-card home-card-highlight" onclick="openTab('boek-nu')">
+      <div class="home-icon">📅</div>
+
+      <h3>Boek een afspraak</h3>
+
+      <p>
+        Klaar voor uw henna? Dien eenvoudig online een boekingsaanvraag in.
+      </p>
+
+      <span>Boek nu →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('prijzen')">
+      <div class="home-icon">💰</div>
+
+      <h3>Onze prijzen</h3>
+
+      <p>
+        Bekijk onze actuele prijzen en ontdek welk aanbod bij u past.
+      </p>
+
+      <span>Bekijk prijzen →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('faq')">
+      <div class="home-icon">❓</div>
+
+      <h3>Veelgestelde vragen</h3>
+
+      <p>
+        Heeft u een vraag over henna, afspraken of verzorging?
+        Misschien staat uw antwoord hier al.
+      </p>
+
+      <span>Bekijk de FAQ →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('ons-team')">
+      <div class="home-icon">👥</div>
+
+      <h3>Ons team</h3>
+
+      <p>
+        Maak kennis met de mensen achter Simply Henna.
+      </p>
+
+      <span>Ontmoet ons team →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('socials')">
+      <div class="home-icon">📱</div>
+
+      <h3>Volg ons</h3>
+
+      <p>
+        Volg Simply Henna op TikTok en Instagram voor designs,
+        video's en updates.
+      </p>
+
+      <span>Bekijk onze socials →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('revieuws')">
+      <div class="home-icon">⭐</div>
+
+      <h3>Reviews</h3>
+
+      <p>
+        Lees ervaringen met Simply Henna of deel uw eigen ervaring met ons.
+      </p>
+
+      <span>Bekijk reviews →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('report')">
+      <div class="home-icon">💬</div>
+
+      <h3>Help ons verbeteren</h3>
+
+      <p>
+        Een fout gevonden of een verbeterpunt? Laat het management weten.
+        Melden mag ook anoniem.
+      </p>
+
+      <span>Probleem melden →</span>
+    </div>
+
+
+    <div class="home-card" onclick="openTab('medeweb')">
+      <div class="home-icon">🔐</div>
+
+      <h3>Medeweb</h3>
+
+      <p>
+        Medewerker van Simply Henna? Bekijk roosters en interne updates
+        via ons medewerkersplatform.
+      </p>
+
+      <span>Ga naar Medeweb →</span>
+    </div>
+
+  </div>
+
+
+  <div class="home-cta">
+    <h2>Klaar voor uw henna? 🌸</h2>
+
+    <p>
+      Dien vandaag nog eenvoudig uw boekingsaanvraag in.
+    </p>
+
+    <a class="home-primary" onclick="openTab('boek-nu')">
+      📅 Boek uw afspraak
+    </a>
+  </div>
+
+</section>
 
   
 <section id="designs">
