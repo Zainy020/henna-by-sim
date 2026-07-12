@@ -6158,6 +6158,1603 @@
   }
 
 }
+    /* =========================
+   MEDEWEB PAGE
+========================= */
+
+#medeweb {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* LABELS */
+
+.medeweb-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.medeweb-mini-label {
+  color: #ffb3d9;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+
+/* HERO */
+
+.medeweb-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  min-height: 620px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.medeweb-hero-content {
+  padding: 75px 20px 75px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.medeweb-hero-content .medeweb-label {
+  color: #ffb3d9;
+}
+
+.medeweb-hero-content h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.medeweb-hero-content p {
+  color: #ffe6f0;
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0 0 32px;
+}
+
+
+/* BUTTONS */
+
+.medeweb-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.medeweb-primary,
+.medeweb-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.medeweb-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.medeweb-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.medeweb-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.medeweb-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* HERO VISUAL */
+
+.medeweb-hero-visual {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 179, 217, 0.14)
+  );
+  overflow: hidden;
+  padding: 55px 35px;
+}
+
+.medeweb-browser {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 55px rgba(40, 0, 20, 0.3);
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+.medeweb-browser-top {
+  height: 55px;
+  background: #fff0f6;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 18px;
+}
+
+.medeweb-browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.medeweb-browser-dots span {
+  width: 10px;
+  height: 10px;
+  background: #ffb3d9;
+  border-radius: 50%;
+}
+
+.medeweb-browser-address {
+  flex: 1;
+  background: white;
+  color: #8b6075;
+  border-radius: 50px;
+  padding: 8px 15px;
+  font-size: 11px;
+}
+
+.medeweb-browser-content {
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
+
+.medeweb-browser-sidebar {
+  background: #660033;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  padding: 20px 10px;
+}
+
+.medeweb-sidebar-logo {
+  width: 43px;
+  height: 43px;
+  border-radius: 15px;
+  background: #ffb3d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.medeweb-browser-sidebar > span {
+  width: 38px;
+  height: 38px;
+  color: #ffe6f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.medeweb-sidebar-active {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.medeweb-dashboard {
+  padding: 45px 35px;
+}
+
+.medeweb-dashboard-label {
+  color: #ff2d8d;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.medeweb-dashboard h3 {
+  color: #660033;
+  font-size: 27px;
+  margin: 8px 0 30px;
+}
+
+.medeweb-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.medeweb-dashboard-grid div {
+  min-height: 90px;
+  background: #fff0f6;
+  border-radius: 18px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.medeweb-dashboard-grid span {
+  font-size: 25px;
+}
+
+.medeweb-dashboard-grid strong {
+  color: #660033;
+  font-size: 12px;
+}
+
+.medeweb-floating {
+  position: absolute;
+  font-size: 42px;
+}
+
+.medeweb-floating-one {
+  top: 45px;
+  left: 35px;
+  transform: rotate(-15deg);
+}
+
+.medeweb-floating-two {
+  right: 35px;
+  bottom: 45px;
+  transform: rotate(15deg);
+}
+
+
+/* INTRO */
+
+.medeweb-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin: 110px 0;
+  align-items: start;
+  scroll-margin-top: 100px;
+}
+
+.medeweb-intro-heading h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+
+.medeweb-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.85;
+  margin-top: 0;
+}
+
+
+/* SECTION HEADING */
+
+.medeweb-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.medeweb-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.medeweb-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* FEATURES */
+
+.medeweb-features {
+  margin: 120px 0;
+}
+
+.medeweb-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.medeweb-feature-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 27px;
+  padding: 35px 28px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.medeweb-feature-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.16);
+}
+
+.medeweb-feature-highlight {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border: 2px solid #ffb3d9;
+}
+
+.medeweb-feature-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #ffd3e7;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.medeweb-feature-icon {
+  font-size: 40px;
+}
+
+.medeweb-feature-card h3 {
+  color: #660033;
+  font-size: 21px;
+  margin: 22px 0 12px;
+}
+
+.medeweb-feature-card p {
+  color: #6d3b53;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ACCESS */
+
+.medeweb-access {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 130px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.medeweb-access-visual {
+  position: relative;
+  min-height: 600px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medeweb-lock {
+  position: relative;
+  width: 220px;
+  height: 260px;
+}
+
+.medeweb-lock-top {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 22px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 0;
+  border-radius: 70px 70px 0 0;
+  top: 0;
+  left: 23px;
+}
+
+.medeweb-lock-body {
+  position: absolute;
+  width: 220px;
+  height: 180px;
+  bottom: 0;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.medeweb-access-decoration {
+  position: absolute;
+  font-size: 38px;
+}
+
+.medeweb-access-one {
+  top: 55px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.medeweb-access-two {
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(15deg);
+}
+
+.medeweb-access-content {
+  padding: 70px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.medeweb-access-content h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.medeweb-access-content > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.medeweb-access-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin: 20px 0 28px;
+}
+
+.medeweb-access-note > span {
+  font-size: 27px;
+}
+
+.medeweb-access-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.medeweb-access-note strong {
+  color: #660033;
+}
+
+
+/* STEPS */
+
+.medeweb-steps {
+  margin: 130px 0;
+}
+
+.medeweb-steps-grid {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.medeweb-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.medeweb-step-number {
+  width: 75px;
+  height: 75px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.25);
+}
+
+.medeweb-step-content {
+  background: white;
+  border-radius: 22px;
+  padding: 28px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.medeweb-step-content h3 {
+  color: #660033;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.medeweb-step-content p {
+  color: #6d3b53;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.medeweb-step-line {
+  width: 3px;
+  height: 35px;
+  background: #ffb3d9;
+  margin-left: 36px;
+}
+
+
+/* SECURITY */
+
+.medeweb-security {
+  display: grid;
+  grid-template-columns: auto 1.2fr 0.8fr;
+  gap: 35px;
+  align-items: center;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 55px;
+  margin: 130px 0;
+}
+
+.medeweb-security-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.medeweb-security-content h2 {
+  color: white;
+  font-size: 32px;
+  margin: 7px 0 15px;
+}
+
+.medeweb-security-content p {
+  color: #ffe6f0;
+  line-height: 1.7;
+}
+
+.medeweb-security-tip {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.medeweb-security-tip > span {
+  font-size: 35px;
+}
+
+.medeweb-security-tip p {
+  color: white;
+  line-height: 1.7;
+}
+
+.medeweb-security-tip strong {
+  color: #ffb3d9;
+}
+
+
+/* HELP */
+
+.medeweb-help {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  margin: 130px 0;
+}
+
+.medeweb-help-content h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.medeweb-help-content p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.medeweb-help-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.medeweb-help-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.medeweb-help-card:hover {
+  transform: translateX(7px);
+  box-shadow: 0 10px 25px rgba(255, 102, 170, 0.15);
+}
+
+.medeweb-help-card > span {
+  font-size: 31px;
+}
+
+.medeweb-help-card div {
+  flex: 1;
+}
+
+.medeweb-help-card strong {
+  color: #660033;
+  font-size: 17px;
+}
+
+.medeweb-help-card p {
+  color: #8b6075;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.medeweb-help-card b {
+  color: #ff2d8d;
+  font-size: 22px;
+}
+
+
+/* CTA */
+
+.medeweb-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.medeweb-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.medeweb-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .medeweb-hero,
+  .medeweb-intro,
+  .medeweb-access,
+  .medeweb-help {
+    grid-template-columns: 1fr;
+  }
+
+  .medeweb-hero-content {
+    padding: 65px 45px;
+  }
+
+  .medeweb-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .medeweb-access-visual {
+    min-height: 350px;
+  }
+
+  .medeweb-security {
+    grid-template-columns: auto 1fr;
+  }
+
+  .medeweb-security-tip {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #medeweb {
+    padding: 15px 10px 100px;
+  }
+
+  .medeweb-hero {
+    border-radius: 22px;
+  }
+
+  .medeweb-hero-content {
+    padding: 50px 25px;
+  }
+
+  .medeweb-hero-content h1 {
+    font-size: 39px;
+  }
+
+  .medeweb-hero-content p {
+    font-size: 16px;
+  }
+
+  .medeweb-buttons {
+    flex-direction: column;
+  }
+
+  .medeweb-primary,
+  .medeweb-secondary {
+    text-align: center;
+  }
+
+  .medeweb-hero-visual {
+    min-height: 390px;
+    padding: 45px 15px;
+  }
+
+  .medeweb-browser {
+    transform: rotate(2deg);
+  }
+
+  .medeweb-browser-content {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .medeweb-browser-sidebar {
+    padding: 15px 7px;
+  }
+
+  .medeweb-dashboard {
+    padding: 35px 20px;
+  }
+
+  .medeweb-dashboard h3 {
+    font-size: 21px;
+  }
+
+  .medeweb-intro,
+  .medeweb-features,
+  .medeweb-access,
+  .medeweb-steps,
+  .medeweb-security,
+  .medeweb-help {
+    margin: 70px 0;
+  }
+
+  .medeweb-intro {
+    gap: 25px;
+  }
+
+  .medeweb-intro-heading h2,
+  .medeweb-section-heading h2,
+  .medeweb-access-content h2,
+  .medeweb-help-content h2,
+  .medeweb-cta h2 {
+    font-size: 30px;
+  }
+
+  .medeweb-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medeweb-access-visual {
+    min-height: 290px;
+  }
+
+  .medeweb-lock {
+    transform: scale(0.7);
+  }
+
+  .medeweb-access-content {
+    padding: 40px 25px;
+  }
+
+  .medeweb-step {
+    grid-template-columns: 60px 1fr;
+    gap: 15px;
+  }
+
+  .medeweb-step-number {
+    width: 58px;
+    height: 58px;
+    border-radius: 19px;
+    font-size: 21px;
+  }
+
+  .medeweb-step-content {
+    padding: 22px 20px;
+  }
+
+  .medeweb-step-line {
+    margin-left: 28px;
+  }
+
+  .medeweb-security {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  .medeweb-security-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .medeweb-security-tip {
+    grid-column: auto;
+  }
+
+  .medeweb-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
+    /* =========================
+   REVIEWS PAGE
+========================= */
+
+#reviews {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.reviews-hero {
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  border-radius: 30px;
+  padding: 75px 55px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(255, 102, 170, 0.15);
+}
+
+.reviews-label {
+  display: inline-block;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.reviews-hero h1 {
+  color: #660033;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.reviews-hero p {
+  color: #6d3b53;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 32px;
+}
+
+
+/* BUTTONS */
+
+.reviews-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.reviews-primary,
+.reviews-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.reviews-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.reviews-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.reviews-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.reviews-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.reviews-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.reviews-intro-text {
+  padding: 40px 20px;
+}
+
+.reviews-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.reviews-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.reviews-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+}
+
+.reviews-stars {
+  display: flex;
+  gap: 7px;
+  color: #ffb3d9;
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+.reviews-art-main {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.reviews-intro-art strong {
+  color: white;
+  font-size: 27px;
+}
+
+.reviews-intro-art p {
+  color: #ffe6f0;
+  margin: 8px 0;
+}
+
+.reviews-floating {
+  position: absolute;
+  font-size: 35px;
+}
+
+.reviews-floating-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.reviews-floating-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.reviews-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.reviews-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.reviews-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* OVERVIEW */
+
+.reviews-overview {
+  margin: 120px 0;
+  scroll-margin-top: 100px;
+}
+
+.reviews-empty {
+  max-width: 760px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 35px;
+  padding: 60px 45px;
+  text-align: center;
+  border: 2px solid #ffe6f0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.reviews-empty-icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 25px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transform: rotate(-5deg);
+}
+
+.reviews-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.reviews-empty h3 {
+  color: #660033;
+  font-size: 32px;
+  margin: 10px 0 17px;
+}
+
+.reviews-empty p {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+
+/* ACTUAL REVIEW CARDS */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 28px;
+  padding: 35px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.review-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.17);
+}
+
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-stars {
+  color: #ff2d8d;
+  letter-spacing: 3px;
+}
+
+.review-quote-mark {
+  color: #ffe6f0;
+  font-size: 60px;
+  line-height: 0.7;
+  font-weight: bold;
+}
+
+.review-card blockquote {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 25px 0 30px;
+}
+
+.review-person {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  color: #660033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.review-person strong {
+  display: block;
+  color: #660033;
+}
+
+.review-person span {
+  display: block;
+  color: #9b6b82;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+/* WHY REVIEWS */
+
+.reviews-why {
+  margin: 120px 0;
+}
+
+.reviews-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.reviews-why-card {
+  background: white;
+  border-radius: 28px;
+  padding: 38px 32px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.reviews-why-card:hover {
+  transform: translateY(-7px);
+}
+
+.reviews-why-featured {
+  background: linear-gradient(135deg, #fff0f6, white);
+  border: 2px solid #ffb3d9;
+  transform: translateY(-15px);
+}
+
+.reviews-why-featured:hover {
+  transform: translateY(-22px);
+}
+
+.reviews-why-card > span {
+  font-size: 40px;
+}
+
+.reviews-why-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 20px 0 12px;
+}
+
+.reviews-why-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* SHARE */
+
+.reviews-share {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+  margin: 130px 0;
+  scroll-margin-top: 100px;
+}
+
+.reviews-share-text {
+  padding: 25px 10px;
+}
+
+.reviews-share-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 22px;
+}
+
+.reviews-share-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.reviews-share-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.reviews-share-note > span {
+  font-size: 27px;
+}
+
+.reviews-share-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.reviews-share-note strong {
+  color: #660033;
+}
+
+.reviews-share-card {
+  background: white;
+  border-radius: 35px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ffe6f0;
+}
+
+.reviews-share-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  transform: rotate(5deg);
+}
+
+.reviews-share-card h3 {
+  color: #660033;
+  font-size: 29px;
+  margin: 10px 0 15px;
+}
+
+.reviews-share-card p {
+  color: #6d3b53;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.reviews-form-button {
+  display: block;
+}
+
+.reviews-form-note {
+  display: block;
+  color: #9b6b82;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+/* POLICY */
+
+.reviews-policy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  max-width: 900px;
+  margin: 120px auto;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 55px;
+}
+
+.reviews-policy-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ff2d8d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.reviews-policy .reviews-mini-label {
+  color: #ffb3d9;
+}
+
+.reviews-policy-text h2 {
+  color: white;
+  font-size: 32px;
+  margin: 7px 0 18px;
+}
+
+.reviews-policy-text p {
+  color: #ffe6f0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* FEEDBACK */
+
+.reviews-feedback {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.reviews-feedback-main h2 {
+  color: #660033;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.reviews-feedback-main p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.reviews-feedback-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reviews-feedback-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.reviews-feedback-card:hover {
+  transform: translateX(7px);
+  box-shadow: 0 10px 25px rgba(255, 102, 170, 0.15);
+}
+
+.reviews-feedback-card > span {
+  font-size: 31px;
+}
+
+.reviews-feedback-card div {
+  flex: 1;
+}
+
+.reviews-feedback-card strong {
+  color: #660033;
+  font-size: 17px;
+}
+
+.reviews-feedback-card p {
+  color: #8b6075;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.reviews-feedback-card b {
+  color: #ff2d8d;
+  font-size: 22px;
+}
+
+
+/* CTA */
+
+.reviews-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.reviews-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.reviews-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .reviews-intro,
+  .reviews-share,
+  .reviews-feedback {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-why-featured,
+  .reviews-why-featured:hover {
+    transform: none;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #reviews {
+    padding: 15px 10px 100px;
+  }
+
+  .reviews-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .reviews-hero h1 {
+    font-size: 39px;
+  }
+
+  .reviews-hero p {
+    font-size: 16px;
+  }
+
+  .reviews-buttons {
+    flex-direction: column;
+  }
+
+  .reviews-primary,
+  .reviews-secondary {
+    text-align: center;
+  }
+
+  .reviews-intro,
+  .reviews-overview,
+  .reviews-why,
+  .reviews-share,
+  .reviews-policy,
+  .reviews-feedback {
+    margin: 70px 0;
+  }
+
+  .reviews-intro-text {
+    padding: 10px 5px;
+  }
+
+  .reviews-intro-text h2,
+  .reviews-section-heading h2,
+  .reviews-share-text h2,
+  .reviews-feedback-main h2,
+  .reviews-cta h2 {
+    font-size: 30px;
+  }
+
+  .reviews-intro-art {
+    min-height: 300px;
+  }
+
+  .reviews-empty {
+    padding: 45px 25px;
+  }
+
+  .reviews-empty h3 {
+    font-size: 26px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-share-card {
+    padding: 40px 25px;
+  }
+
+  .reviews-policy {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  .reviews-policy-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .reviews-policy-text h2 {
+    font-size: 27px;
+  }
+
+  .reviews-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 
@@ -10272,15 +11869,496 @@
 
   
 <section id="medeweb">
-  <h2>Medeweb, het nieuwe platform!</h2>
-    <p>Medeweb staat voor het nieuwe medewerkersweb! hier vindt je de roosters</p>
-    <p>Voorheen waren die op de site maar dat bleek niet zo handig te zijn!</p>
-    <p>Hier vindt je nu ook *Updates etc! hopelijk tot daar!</p>
 
-   <a class="medeweb-btn"
-  href="https://zainy020.github.io/Rooster/"
-   target="_blank">
-    📅 Ga naar Medeweb, voorheen Rooster</a>
+  <!-- MEDEWEB HERO -->
+  <div class="medeweb-hero">
+
+    <div class="medeweb-hero-content">
+
+      <span class="medeweb-label">🔐 SIMPLY HENNA INTERN</span>
+
+      <h1>Welkom op<br>Medeweb. 🌸</h1>
+
+      <p>
+        De interne omgeving voor medewerkers van Simply Henna.
+        Bekijk roosters, interne updates en andere informatie
+        die u nodig heeft voor uw werk.
+      </p>
+
+      <div class="medeweb-buttons">
+
+        <a class="medeweb-primary"
+           href="https://sites.google.com/view/simplyhenna-medeweb/"
+           target="_blank"
+           rel="noopener noreferrer">
+          🔐 Open Medeweb
+        </a>
+
+        <a class="medeweb-secondary" href="#medeweb-info">
+          Meer informatie ↓
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="medeweb-hero-visual">
+
+      <div class="medeweb-browser">
+
+        <div class="medeweb-browser-top">
+
+          <div class="medeweb-browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="medeweb-browser-address">
+            🔐 Simply Henna • Medeweb
+          </div>
+
+        </div>
+
+
+        <div class="medeweb-browser-content">
+
+          <div class="medeweb-browser-sidebar">
+
+            <div class="medeweb-sidebar-logo">🌸</div>
+
+            <span class="medeweb-sidebar-active">⌂</span>
+            <span>📅</span>
+            <span>📢</span>
+            <span>📁</span>
+
+          </div>
+
+
+          <div class="medeweb-dashboard">
+
+            <span class="medeweb-dashboard-label">
+              MEDEWEB
+            </span>
+
+            <h3>Goed om u te zien. 👋</h3>
+
+            <div class="medeweb-dashboard-grid">
+
+              <div>
+                <span>📅</span>
+                <strong>Rooster</strong>
+              </div>
+
+              <div>
+                <span>📢</span>
+                <strong>Updates</strong>
+              </div>
+
+              <div>
+                <span>📁</span>
+                <strong>Intern</strong>
+              </div>
+
+              <div>
+                <span>🌸</span>
+                <strong>Simply</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <span class="medeweb-floating medeweb-floating-one">✨</span>
+      <span class="medeweb-floating medeweb-floating-two">🌸</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="medeweb-intro" id="medeweb-info">
+
+    <div class="medeweb-intro-heading">
+
+      <span class="medeweb-label">OVER MEDEWEB</span>
+
+      <h2>Alles voor medewerkers.<br>Op één plek. 🤎</h2>
+
+    </div>
+
+
+    <div class="medeweb-intro-text">
+
+      <p>
+        Medeweb is de interne medewerkersomgeving van Simply Henna.
+        De omgeving is bedoeld om belangrijke interne informatie
+        overzichtelijk en op één centrale plek beschikbaar te maken.
+      </p>
+
+      <p>
+        Via Medeweb kunnen medewerkers informatie bekijken die
+        relevant is voor hun werkzaamheden binnen Simply Henna.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- FEATURES -->
+  <div class="medeweb-features">
+
+    <div class="medeweb-section-heading">
+
+      <span class="medeweb-label">IN MEDEWEB</span>
+
+      <h2>Wat vindt u op Medeweb?</h2>
+
+      <p>
+        Interne informatie, overzichtelijk verzameld voor het team.
+      </p>
+
+    </div>
+
+
+    <div class="medeweb-feature-grid">
+
+      <div class="medeweb-feature-card">
+
+        <span class="medeweb-feature-number">01</span>
+
+        <div class="medeweb-feature-icon">📅</div>
+
+        <h3>Roosters</h3>
+
+        <p>
+          Bekijk beschikbare roosterinformatie en andere
+          relevante informatie rondom de planning.
+        </p>
+
+      </div>
+
+
+      <div class="medeweb-feature-card medeweb-feature-highlight">
+
+        <span class="medeweb-feature-number">02</span>
+
+        <div class="medeweb-feature-icon">📢</div>
+
+        <h3>Interne updates</h3>
+
+        <p>
+          Blijf op de hoogte van belangrijke mededelingen
+          en interne ontwikkelingen binnen Simply Henna.
+        </p>
+
+      </div>
+
+
+      <div class="medeweb-feature-card">
+
+        <span class="medeweb-feature-number">03</span>
+
+        <div class="medeweb-feature-icon">📁</div>
+
+        <h3>Interne informatie</h3>
+
+        <p>
+          Vind informatie en interne onderdelen die
+          relevant zijn voor medewerkers van Simply Henna.
+        </p>
+
+      </div>
+
+
+      <div class="medeweb-feature-card">
+
+        <span class="medeweb-feature-number">04</span>
+
+        <div class="medeweb-feature-icon">🌸</div>
+
+        <h3>Simply Henna</h3>
+
+        <p>
+          Eén centrale omgeving voor informatie rondom
+          uw werkzaamheden binnen Simply Henna.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- EMPLOYEE ONLY -->
+  <div class="medeweb-access">
+
+    <div class="medeweb-access-visual">
+
+      <div class="medeweb-lock">
+
+        <div class="medeweb-lock-top"></div>
+
+        <div class="medeweb-lock-body">
+          🔐
+        </div>
+
+      </div>
+
+      <span class="medeweb-access-decoration medeweb-access-one">🌸</span>
+      <span class="medeweb-access-decoration medeweb-access-two">✨</span>
+
+    </div>
+
+
+    <div class="medeweb-access-content">
+
+      <span class="medeweb-label">ALLEEN VOOR MEDEWERKERS</span>
+
+      <h2>Medeweb is een interne omgeving.</h2>
+
+      <p>
+        Medeweb is bedoeld voor medewerkers van Simply Henna.
+        De informatie binnen deze omgeving kan intern van aard zijn
+        en is niet bedoeld als openbare informatie voor klanten
+        of andere bezoekers.
+      </p>
+
+      <p>
+        Heeft u geen werkzaamheden binnen Simply Henna?
+        Dan heeft u Medeweb normaal gesproken niet nodig.
+      </p>
+
+
+      <div class="medeweb-access-note">
+
+        <span>🤎</span>
+
+        <p>
+          <strong>Medewerker van Simply Henna?</strong><br>
+          Gebruik de officiële Medeweb-link om naar de
+          interne omgeving te gaan.
+        </p>
+
+      </div>
+
+
+      <a class="medeweb-primary"
+         href="https://sites.google.com/view/simplyhenna-medeweb/"
+         target="_blank"
+         rel="noopener noreferrer">
+        🔐 Naar Medeweb
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- STEPS -->
+  <div class="medeweb-steps">
+
+    <div class="medeweb-section-heading">
+
+      <span class="medeweb-label">NAAR MEDEWEB</span>
+
+      <h2>Zo opent u de medewerkersomgeving. 🌸</h2>
+
+      <p>
+        Vanuit simplyhenna.nl bent u in een paar stappen
+        bij de interne omgeving.
+      </p>
+
+    </div>
+
+
+    <div class="medeweb-steps-grid">
+
+      <div class="medeweb-step">
+
+        <div class="medeweb-step-number">1</div>
+
+        <div class="medeweb-step-content">
+
+          <h3>Open Medeweb</h3>
+
+          <p>
+            Klik op de knop om de officiële
+            Medeweb-omgeving te openen.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="medeweb-step-line"></div>
+
+
+      <div class="medeweb-step">
+
+        <div class="medeweb-step-number">2</div>
+
+        <div class="medeweb-step-content">
+
+          <h3>Ga naar de juiste pagina</h3>
+
+          <p>
+            Gebruik de interne navigatie om de informatie
+            te vinden die u nodig heeft.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="medeweb-step-line"></div>
+
+
+      <div class="medeweb-step">
+
+        <div class="medeweb-step-number">3</div>
+
+        <div class="medeweb-step-content">
+
+          <h3>Blijf op de hoogte</h3>
+
+          <p>
+            Bekijk Medeweb wanneer u interne informatie
+            of nieuwe updates nodig heeft.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SECURITY -->
+  <div class="medeweb-security">
+
+    <div class="medeweb-security-icon">🛡️</div>
+
+
+    <div class="medeweb-security-content">
+
+      <span class="medeweb-mini-label">VEILIG OMGAAN MET INTERNE INFORMATIE</span>
+
+      <h2>Houd interne informatie intern.</h2>
+
+      <p>
+        Informatie binnen Medeweb kan bedoeld zijn voor intern gebruik.
+        Deel interne informatie daarom niet zomaar met personen buiten
+        Simply Henna.
+      </p>
+
+    </div>
+
+
+    <div class="medeweb-security-tip">
+
+      <span>🔐</span>
+
+      <p>
+        <strong>Let op</strong><br>
+        Deel eventuele inloggegevens of andere persoonlijke
+        toegangsgegevens nooit met anderen.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- PROBLEM -->
+  <div class="medeweb-help">
+
+    <div class="medeweb-help-content">
+
+      <span class="medeweb-label">HULP NODIG?</span>
+
+      <h2>Probleem met Medeweb? 💬</h2>
+
+      <p>
+        Werkt een onderdeel niet, klopt informatie niet of heeft u
+        een ander probleem met de medewerkersomgeving?
+      </p>
+
+      <p>
+        Meld het probleem bij het management van Simply Henna,
+        zodat het bekeken kan worden.
+      </p>
+
+    </div>
+
+
+    <div class="medeweb-help-options">
+
+      <a class="medeweb-help-card" onclick="openTab('report')">
+
+        <span>💬</span>
+
+        <div>
+          <strong>Probleem melden</strong>
+          <p>Stuur een melding naar het management.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+
+      <a class="medeweb-help-card"
+         href="mailto:simplyhennamanagement@gmail.com">
+
+        <span>✉️</span>
+
+        <div>
+          <strong>Management e-mailen</strong>
+          <p>Neem rechtstreeks contact met ons op.</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="medeweb-cta">
+
+    <span class="medeweb-label">SIMPLY HENNA INTERN</span>
+
+    <h2>Klaar om naar Medeweb te gaan? 🔐🌸</h2>
+
+    <p>
+      Open de interne medewerkersomgeving van Simply Henna.
+    </p>
+
+    <a class="medeweb-primary"
+       href="https://sites.google.com/view/simplyhenna-medeweb/"
+       target="_blank"
+       rel="noopener noreferrer">
+      🔐 Open Medeweb
+    </a>
+
+  </div>
+
 </section>
 
 
