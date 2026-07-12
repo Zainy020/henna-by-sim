@@ -2847,6 +2847,1589 @@
   }
 
 }
+    /* =========================
+   TEAM PAGE
+========================= */
+
+#ons-team {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.team-hero {
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  border-radius: 30px;
+  padding: 75px 55px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(255, 102, 170, 0.15);
+}
+
+.team-label {
+  display: inline-block;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.team-hero h1 {
+  color: #660033;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+}
+
+.team-hero p {
+  color: #6d3b53;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+
+/* BUTTONS */
+
+.team-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.team-primary,
+.team-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.team-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.team-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.team-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.team-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.team-intro {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 35px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.team-intro-text {
+  padding: 40px 20px;
+}
+
+.team-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.team-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.team-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-art-main {
+  font-size: 85px;
+  margin-bottom: 20px;
+}
+
+.team-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+}
+
+.team-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+}
+
+.team-art-decoration {
+  position: absolute;
+  font-size: 35px;
+}
+
+.team-art-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.team-art-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SIMRAN */
+
+.team-founder {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+  scroll-margin-top: 100px;
+}
+
+.team-founder-visual {
+  position: relative;
+  min-height: 620px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-founder-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.team-founder-circle span {
+  font-size: 100px;
+}
+
+.team-floating {
+  position: absolute;
+  font-size: 40px;
+}
+
+.team-floating-one {
+  top: 65px;
+  left: 50px;
+  transform: rotate(-15deg);
+}
+
+.team-floating-two {
+  right: 55px;
+  bottom: 65px;
+  transform: rotate(12deg);
+}
+
+.team-founder-text {
+  padding: 65px;
+}
+
+.team-founder-text h2 {
+  color: #660033;
+  font-size: 45px;
+  margin: 5px 0 15px;
+}
+
+.team-founder-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.team-role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 25px;
+}
+
+.team-role-tags span {
+  background: #fff0f6;
+  color: #cc0066;
+  border-radius: 50px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.team-quote {
+  position: relative;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 25px 22px 55px;
+  margin: 28px 0;
+}
+
+.team-quote > span {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  color: #ffb3d9;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.team-quote p {
+  color: #660033;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* MANAGEMENT */
+
+.team-management {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 0;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 120px 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.team-management-text {
+  padding: 65px;
+}
+
+.team-management-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 15px;
+}
+
+.team-management-text > p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.team-management-note {
+  display: flex;
+  gap: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-top: 28px;
+}
+
+.team-management-note > span {
+  font-size: 28px;
+}
+
+.team-management-note p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.team-management-note strong {
+  color: #660033;
+}
+
+.team-management-visual {
+  min-height: 580px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.team-management-icon {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+  margin-bottom: 25px;
+  transform: rotate(5deg);
+}
+
+.team-management-visual > strong {
+  color: #660033;
+  font-size: 28px;
+}
+
+.team-management-visual > p {
+  color: #6d3b53;
+}
+
+.team-management-mini-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.team-management-mini-icons span {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+
+/* GENERAL SECTION HEADING */
+
+.team-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.team-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.team-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* MODEL */
+
+.team-model {
+  margin: 120px 0;
+}
+
+.team-model-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 35px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.team-model-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-model-avatar span {
+  font-size: 55px;
+}
+
+.team-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.team-model-info h3 {
+  color: #660033;
+  font-size: 29px;
+  margin: 7px 0 15px;
+}
+
+.team-model-info p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.team-model-badge {
+  width: 150px;
+  background: #fff0f6;
+  border-radius: 22px;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.team-model-badge > span {
+  font-size: 32px;
+}
+
+.team-model-badge strong {
+  display: block;
+  color: #660033;
+  margin: 10px 0 5px;
+}
+
+.team-model-badge p {
+  color: #8b6075;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* TOGETHER */
+
+.team-together {
+  margin: 120px 0;
+}
+
+.team-together-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.team-together-card {
+  background: white;
+  border-radius: 27px;
+  padding: 38px 32px;
+  transition: 0.25s;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+}
+
+.team-together-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.17);
+}
+
+.team-together-card > span {
+  font-size: 40px;
+}
+
+.team-together-card h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 20px 0 12px;
+}
+
+.team-together-card p {
+  color: #6d3b53;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* JOIN */
+
+.team-join {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 65px;
+  margin: 120px 0;
+}
+
+.team-join .team-label {
+  color: #ffb3d9;
+}
+
+.team-join-text h2 {
+  color: white;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.team-join-text p {
+  color: #ffe6f0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.team-join-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 30px;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+.team-join-card > span {
+  font-size: 65px;
+}
+
+.team-join-card strong {
+  display: block;
+  color: white;
+  font-size: 25px;
+  margin: 20px 0 10px;
+}
+
+.team-join-card p {
+  color: #ffdeed;
+  line-height: 1.7;
+}
+
+
+/* CTA */
+
+.team-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.team-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.team-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .team-intro,
+  .team-founder,
+  .team-management,
+  .team-join {
+    grid-template-columns: 1fr;
+  }
+
+  .team-founder-visual,
+  .team-management-visual {
+    min-height: 320px;
+  }
+
+  .team-model-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .team-model-badge {
+    grid-column: 1 / -1;
+    width: auto;
+  }
+
+  .team-together-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #ons-team {
+    padding: 15px 10px 100px;
+  }
+
+  .team-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .team-hero h1 {
+    font-size: 39px;
+  }
+
+  .team-hero p {
+    font-size: 16px;
+  }
+
+  .team-buttons {
+    flex-direction: column;
+  }
+
+  .team-primary,
+  .team-secondary {
+    text-align: center;
+  }
+
+  .team-intro,
+  .team-founder,
+  .team-management,
+  .team-model,
+  .team-together,
+  .team-join {
+    margin: 70px 0;
+  }
+
+  .team-intro-text {
+    padding: 10px 5px;
+  }
+
+  .team-intro-text h2,
+  .team-founder-text h2,
+  .team-management-text h2,
+  .team-section-heading h2,
+  .team-join-text h2,
+  .team-cta h2 {
+    font-size: 30px;
+  }
+
+  .team-intro-art {
+    min-height: 280px;
+  }
+
+  .team-founder-visual {
+    min-height: 280px;
+  }
+
+  .team-founder-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .team-founder-circle span {
+    font-size: 70px;
+  }
+
+  .team-founder-text,
+  .team-management-text {
+    padding: 38px 25px;
+  }
+
+  .team-management-visual {
+    min-height: 300px;
+  }
+
+  .team-management-icon {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+  }
+
+  .team-model-card {
+    grid-template-columns: 1fr;
+    padding: 30px 25px;
+    text-align: center;
+  }
+
+  .team-model-avatar {
+    margin: 0 auto;
+  }
+
+  .team-model-badge {
+    grid-column: auto;
+  }
+
+  .team-join {
+    padding: 45px 25px;
+    gap: 35px;
+    border-radius: 25px;
+  }
+
+  .team-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
+    /* =========================
+   SOCIALS PAGE
+========================= */
+
+#socials {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.socials-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.socials-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.socials-hero .socials-label {
+  color: #ffb3d9;
+}
+
+.socials-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+  max-width: 800px;
+}
+
+.socials-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.socials-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.socials-primary,
+.socials-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.socials-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.socials-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.socials-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.socials-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.socials-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  margin: 100px 0;
+  align-items: center;
+}
+
+.socials-intro-text {
+  padding: 40px 20px;
+}
+
+.socials-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.socials-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* PHONE */
+
+.socials-intro-art {
+  position: relative;
+  min-height: 500px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.socials-phone {
+  width: 235px;
+  height: 410px;
+  border: 9px solid #660033;
+  border-radius: 38px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(102, 0, 51, 0.2);
+  transform: rotate(4deg);
+}
+
+.socials-phone-top {
+  width: 90px;
+  height: 18px;
+  background: #660033;
+  border-radius: 0 0 15px 15px;
+  margin: 0 auto;
+}
+
+.socials-phone-content {
+  height: calc(100% - 18px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #fff, #fff0f6);
+  padding: 20px;
+}
+
+.socials-phone-flower {
+  font-size: 80px;
+  margin-bottom: 25px;
+}
+
+.socials-phone-content strong {
+  color: #660033;
+  font-size: 18px;
+}
+
+.socials-phone-content p {
+  color: #8b6075;
+  font-size: 12px;
+}
+
+.socials-phone-icons {
+  display: flex;
+  gap: 18px;
+  color: #660033;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.socials-floating {
+  position: absolute;
+  font-size: 40px;
+}
+
+.socials-floating-one {
+  top: 55px;
+  left: 50px;
+  transform: rotate(-15deg);
+}
+
+.socials-floating-two {
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(15deg);
+}
+
+
+/* SECTION HEADING */
+
+.socials-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.socials-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.socials-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* CHANNELS */
+
+.socials-channels {
+  margin: 120px 0;
+}
+
+.socials-channel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.socials-channel-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 440px;
+  border-radius: 35px;
+  padding: 42px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.socials-channel-card:hover {
+  transform: translateY(-8px);
+}
+
+.socials-instagram {
+  background: linear-gradient(145deg, #fff0f6, #ffffff);
+  border: 2px solid #ffb3d9;
+  box-shadow: 0 10px 35px rgba(255, 102, 170, 0.13);
+}
+
+.socials-tiktok {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.socials-channel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials-channel-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 23px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.socials-official-badge {
+  background: #ff2d8d;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding: 8px 13px;
+  border-radius: 50px;
+}
+
+.socials-channel-content {
+  margin-top: 40px;
+}
+
+.socials-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.socials-channel-content h3 {
+  color: #660033;
+  font-size: 34px;
+  margin: 7px 0 17px;
+}
+
+.socials-channel-content p {
+  color: #6d3b53;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.socials-tiktok .socials-channel-content h3 {
+  color: white;
+}
+
+.socials-tiktok .socials-channel-content p {
+  color: #ffe6f0;
+}
+
+.socials-channel-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 25px 0;
+}
+
+.socials-channel-features span {
+  background: white;
+  color: #660033;
+  padding: 8px 13px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.socials-instagram .socials-channel-features span {
+  background: #ffe6f0;
+}
+
+.socials-channel-link {
+  margin-top: auto;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.socials-channel-link span {
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.socials-channel-card:hover .socials-channel-link span {
+  transform: translateX(7px);
+}
+
+
+/* CONTENT TYPES */
+
+.socials-content {
+  margin: 120px 0;
+}
+
+.socials-content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.socials-content-card {
+  position: relative;
+  background: white;
+  border-radius: 27px;
+  padding: 35px 28px;
+  overflow: hidden;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.socials-content-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(255, 102, 170, 0.16);
+}
+
+.socials-content-icon {
+  font-size: 40px;
+}
+
+.socials-card-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #ffd3e7;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.socials-content-card h3 {
+  color: #660033;
+  font-size: 21px;
+  margin: 22px 0 12px;
+}
+
+.socials-content-card p {
+  color: #6d3b53;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* FEED */
+
+.socials-feed {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+  margin: 130px 0;
+}
+
+.socials-feed-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 22px;
+}
+
+.socials-feed-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.socials-feed-text .socials-primary {
+  margin-top: 15px;
+}
+
+.socials-feed-preview {
+  position: relative;
+  min-height: 620px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+
+/* FAKE POST VISUALS */
+
+.socials-post {
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(102, 0, 51, 0.17);
+}
+
+.socials-post-one {
+  width: 310px;
+  border-radius: 25px;
+  top: 55px;
+  left: 45px;
+  transform: rotate(-5deg);
+}
+
+.socials-post-two {
+  width: 230px;
+  height: 380px;
+  border-radius: 27px;
+  right: 35px;
+  bottom: 40px;
+  transform: rotate(7deg);
+}
+
+.socials-post-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+}
+
+.socials-post-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffe6f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-post-top div:nth-child(2) {
+  flex: 1;
+}
+
+.socials-post-top strong {
+  display: block;
+  color: #660033;
+  font-size: 12px;
+}
+
+.socials-post-top span {
+  color: #8b6075;
+  font-size: 10px;
+}
+
+.socials-post-image {
+  height: 300px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 95px;
+}
+
+.socials-post-actions {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.socials-video-preview {
+  height: 100%;
+  background: linear-gradient(180deg, #660033, #9b1857);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-play {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  padding-left: 5px;
+}
+
+.socials-video-info {
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+}
+
+.socials-video-info strong {
+  color: white;
+  font-size: 13px;
+}
+
+.socials-video-info p {
+  color: #ffe6f0;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+
+/* CONTACT */
+
+.socials-contact {
+  display: grid;
+  grid-template-columns: auto 1fr 0.8fr;
+  gap: 35px;
+  align-items: center;
+  background: white;
+  border-radius: 35px;
+  padding: 50px;
+  margin: 120px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.socials-contact-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+
+.socials-contact-text h2 {
+  color: #660033;
+  font-size: 32px;
+  margin: 5px 0 15px;
+}
+
+.socials-contact-text p {
+  color: #6d3b53;
+  line-height: 1.7;
+}
+
+.socials-contact-note {
+  font-size: 13px;
+}
+
+.socials-contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials-contact-actions a {
+  background: #fff0f6;
+  color: #660033;
+  border-radius: 15px;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.socials-contact-actions a:hover {
+  transform: translateX(5px);
+  background: #ffe6f0;
+}
+
+.socials-contact-actions span {
+  color: #ff2d8d;
+}
+
+
+/* OFFICIAL */
+
+.socials-official {
+  max-width: 800px;
+  margin: 0 auto 120px;
+  background: #fff0f6;
+  border: 2px solid #ffb3d9;
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.socials-official-icon {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  border-radius: 50%;
+  background: #ff2d8d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.socials-official h3 {
+  color: #660033;
+  font-size: 22px;
+  margin: 5px 0 8px;
+}
+
+.socials-official p {
+  color: #6d3b53;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* CTA */
+
+.socials-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.socials-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.socials-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+.socials-cta .socials-buttons {
+  justify-content: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .socials-intro,
+  .socials-feed {
+    grid-template-columns: 1fr;
+  }
+
+  .socials-content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socials-contact {
+    grid-template-columns: auto 1fr;
+  }
+
+  .socials-contact-actions {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #socials {
+    padding: 15px 10px 100px;
+  }
+
+  .socials-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .socials-hero h1 {
+    font-size: 39px;
+  }
+
+  .socials-hero p {
+    font-size: 16px;
+  }
+
+  .socials-buttons {
+    flex-direction: column;
+  }
+
+  .socials-primary,
+  .socials-secondary {
+    text-align: center;
+  }
+
+  .socials-intro,
+  .socials-channels,
+  .socials-content,
+  .socials-feed,
+  .socials-contact {
+    margin: 70px 0;
+  }
+
+  .socials-intro-text {
+    padding: 10px 5px;
+  }
+
+  .socials-intro-text h2,
+  .socials-section-heading h2,
+  .socials-feed-text h2,
+  .socials-contact-text h2,
+  .socials-cta h2 {
+    font-size: 30px;
+  }
+
+  .socials-intro-art {
+    min-height: 430px;
+  }
+
+  .socials-phone {
+    width: 200px;
+    height: 350px;
+  }
+
+  .socials-channel-grid,
+  .socials-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .socials-channel-card {
+    min-height: 420px;
+    padding: 32px 25px;
+  }
+
+  .socials-channel-content h3 {
+    font-size: 27px;
+  }
+
+  .socials-feed-preview {
+    min-height: 570px;
+  }
+
+  .socials-post-one {
+    width: 250px;
+    left: 15px;
+  }
+
+  .socials-post-two {
+    width: 190px;
+    height: 330px;
+    right: 15px;
+  }
+
+  .socials-post-image {
+    height: 240px;
+  }
+
+  .socials-contact {
+    grid-template-columns: 1fr;
+    padding: 35px 25px;
+  }
+
+  .socials-contact-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socials-contact-actions {
+    grid-column: auto;
+  }
+
+  .socials-official {
+    align-items: flex-start;
+    padding: 25px;
+    margin-bottom: 70px;
+  }
+
+  .socials-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
 
@@ -4848,45 +6431,483 @@
 
 
   
-<section id="ons-team">
-<h1>ons team</h1>
+<section id="socials">
 
-<div class="grid">
+  <!-- SOCIALS HERO -->
+  <div class="socials-hero">
 
+    <span class="socials-label">📱 VOLG SIMPLY HENNA</span>
 
-    <div class="card">
-        <h3>Zainedin</h3>
-        <ul>
-            <li>Manager</li>
-            <li>Sitebeheer</li>
-            <li>Beheer social media (TikTok/Instagram)</li>
-            <li>Penningmeester</li>
-            <li>Secretaris</li>
-        </ul>
+    <h1>Meer henna.<br>Ook op uw feed. 🌸</h1>
+
+    <p>
+      Volg Simply Henna op TikTok en Instagram voor henna-designs,
+      video's, resultaten en updates van achter de schermen.
+    </p>
+
+    <div class="socials-buttons">
+
+      <a class="socials-primary"
+         href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+        📸 Volg ons op Instagram
+      </a>
+
+      <a class="socials-secondary"
+         href="https://www.tiktok.com/@simplyhenna.nl"
+         target="_blank"
+         rel="noopener noreferrer">
+        🎵 Bekijk onze TikTok
+      </a>
+
     </div>
 
-    <div class="card">
-        <h3>Simran</h3>
-        <ul>
-            <li>Henna-artiest</li>
-            <li>Socialmedia-team</li>
-        </ul>
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="socials-intro">
+
+    <div class="socials-intro-text">
+
+      <span class="socials-label">SIMPLY ONLINE</span>
+
+      <h2>Onze designs stoppen niet bij de website. 🤎</h2>
+
+      <p>
+        Op onze socialmediakanalen delen we meer van Simply Henna.
+        Denk aan nieuwe designs, video's, resultaten en andere updates
+        rondom ons werk.
+      </p>
+
+      <p>
+        Wilt u op de hoogte blijven van wat wij maken?
+        Dan vindt u ons officieel op Instagram en TikTok.
+      </p>
+
     </div>
 
-    <div class="card">
-        <h3>Nilaya</h3>
-        <ul>
-            <li>Henna-model</li>
-        </ul>
+
+    <div class="socials-intro-art">
+
+      <div class="socials-phone">
+
+        <div class="socials-phone-top"></div>
+
+        <div class="socials-phone-content">
+
+          <span class="socials-phone-flower">🌸</span>
+
+          <strong>@simplyhenna.nl</strong>
+
+          <p>Henna • Designs • Simply</p>
+
+          <div class="socials-phone-icons">
+            <span>♡</span>
+            <span>💬</span>
+            <span>↗</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <span class="socials-floating socials-floating-one">✨</span>
+      <span class="socials-floating socials-floating-two">🌿</span>
+
     </div>
 
-    <div class="card">
-        <h3>Jij?</h3>
-        <p>Zie jij jezelf binnenkort hier? Stuur ons gerust een DM!</p>
+  </div>
+
+
+  <!-- SOCIAL CHANNELS -->
+  <div class="socials-channels">
+
+    <div class="socials-section-heading">
+
+      <span class="socials-label">ONZE OFFICIËLE KANALEN</span>
+
+      <h2>Waar vindt u ons?</h2>
+
+      <p>
+        Kies uw favoriete platform en volg Simply Henna.
+      </p>
+
     </div>
+
+
+    <div class="socials-channel-grid">
+
+
+      <!-- INSTAGRAM -->
+      <a class="socials-channel-card socials-instagram"
+         href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="socials-channel-top">
+
+          <div class="socials-channel-icon">📸</div>
+
+          <span class="socials-official-badge">OFFICIEEL</span>
+
+        </div>
+
+        <div class="socials-channel-content">
+
+          <span class="socials-mini-label">INSTAGRAM</span>
+
+          <h3>@simplyhenna.nl</h3>
+
+          <p>
+            Bekijk henna-designs, resultaten en updates
+            van Simply Henna op Instagram.
+          </p>
+
+        </div>
+
+        <div class="socials-channel-features">
+
+          <span>🌸 Designs</span>
+          <span>✨ Resultaten</span>
+          <span>📱 Updates</span>
+
+        </div>
+
+        <div class="socials-channel-link">
+          Bekijk Instagram <span>→</span>
+        </div>
+
+      </a>
+
+
+      <!-- TIKTOK -->
+      <a class="socials-channel-card socials-tiktok"
+         href="https://www.tiktok.com/@simplyhenna.nl"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="socials-channel-top">
+
+          <div class="socials-channel-icon">🎵</div>
+
+          <span class="socials-official-badge">OFFICIEEL</span>
+
+        </div>
+
+        <div class="socials-channel-content">
+
+          <span class="socials-mini-label">TIKTOK</span>
+
+          <h3>@simplyhenna.nl</h3>
+
+          <p>
+            Bekijk onze henna-video's, content en nieuwe
+            creaties op het officiële TikTok-account.
+          </p>
+
+        </div>
+
+        <div class="socials-channel-features">
+
+          <span>🎥 Video's</span>
+          <span>🌿 Henna</span>
+          <span>👀 Behind the scenes</span>
+
+        </div>
+
+        <div class="socials-channel-link">
+          Bekijk TikTok <span>→</span>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- WHAT WE SHARE -->
+  <div class="socials-content">
+
+    <div class="socials-section-heading">
+
+      <span class="socials-label">OP UW FEED</span>
+
+      <h2>Wat delen we? 👀</h2>
+
+      <p>
+        Een kijkje in de wereld van Simply Henna.
+      </p>
+
+    </div>
+
+
+    <div class="socials-content-grid">
+
+      <div class="socials-content-card">
+
+        <div class="socials-content-icon">🌸</div>
+
+        <span class="socials-card-number">01</span>
+
+        <h3>Nieuwe designs</h3>
+
+        <p>
+          Ontdek nieuwe henna-designs en bekijk
+          verschillende stijlen en creaties.
+        </p>
+
+      </div>
+
+
+      <div class="socials-content-card">
+
+        <div class="socials-content-icon">🎥</div>
+
+        <span class="socials-card-number">02</span>
+
+        <h3>Video's</h3>
+
+        <p>
+          Bekijk Simply Henna in beeld en volg
+          onze content via TikTok en Instagram.
+        </p>
+
+      </div>
+
+
+      <div class="socials-content-card">
+
+        <div class="socials-content-icon">✨</div>
+
+        <span class="socials-card-number">03</span>
+
+        <h3>Resultaten</h3>
+
+        <p>
+          Bekijk vastgelegde resultaten en krijg
+          inspiratie voor uw eigen henna.
+        </p>
+
+      </div>
+
+
+      <div class="socials-content-card">
+
+        <div class="socials-content-icon">📢</div>
+
+        <span class="socials-card-number">04</span>
+
+        <h3>Updates</h3>
+
+        <p>
+          Blijf op de hoogte van nieuwe informatie
+          en ontwikkelingen rondom Simply Henna.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SOCIAL FEED VISUAL -->
+  <div class="socials-feed">
+
+    <div class="socials-feed-text">
+
+      <span class="socials-label">SIMPLY IN BEELD</span>
+
+      <h2>Een kijkje achter de schermen. 📱</h2>
+
+      <p>
+        Social media geeft ons de ruimte om meer te laten zien
+        dan alleen het eindresultaat.
+      </p>
+
+      <p>
+        Van nieuwe creaties tot momenten rondom Simply Henna:
+        volg onze officiële accounts om mee te kijken.
+      </p>
+
+      <a class="socials-primary"
+         href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Bekijk onze content →
+      </a>
+
+    </div>
+
+
+    <div class="socials-feed-preview">
+
+      <div class="socials-post socials-post-one">
+
+        <div class="socials-post-top">
+
+          <div class="socials-post-avatar">🌸</div>
+
+          <div>
+            <strong>simplyhenna.nl</strong>
+            <span>Simply Henna</span>
+          </div>
+
+          <b>•••</b>
+
+        </div>
+
+        <div class="socials-post-image">
+          🌿
+        </div>
+
+        <div class="socials-post-actions">
+          <span>♡</span>
+          <span>💬</span>
+          <span>↗</span>
+        </div>
+
+      </div>
+
+
+      <div class="socials-post socials-post-two">
+
+        <div class="socials-video-preview">
+
+          <span class="socials-play">▶</span>
+
+          <div class="socials-video-info">
+
+            <strong>@simplyhenna.nl</strong>
+
+            <p>Simply Henna 🌸</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CONTACT -->
+  <div class="socials-contact">
+
+    <div class="socials-contact-icon">💬</div>
+
+    <div class="socials-contact-text">
+
+      <span class="socials-label">EEN BERICHT STUREN?</span>
+
+      <h2>Onze DM's zijn ook een ingang.</h2>
+
+      <p>
+        Heeft u een algemene vraag? U kunt Simply Henna via onze
+        officiële socialmediakanalen een bericht sturen.
+      </p>
+
+      <p class="socials-contact-note">
+        Voor het indienen van een boekingsaanvraag adviseren wij
+        het officiële boekingsformulier via de pagina <strong>Boek nu</strong>.
+      </p>
+
+    </div>
+
+
+    <div class="socials-contact-actions">
+
+      <a href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+        📸 Instagram DM <span>→</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@simplyhenna.nl"
+         target="_blank"
+         rel="noopener noreferrer">
+        🎵 TikTok <span>→</span>
+      </a>
+
+      <a href="mailto:simplyhennamanagement@gmail.com">
+        ✉️ E-mail <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- SAFETY / OFFICIAL ACCOUNTS -->
+  <div class="socials-official">
+
+    <div class="socials-official-icon">✓</div>
+
+    <div>
+
+      <span class="socials-mini-label">OFFICIËLE ACCOUNTS</span>
+
+      <h3>Let op het juiste account.</h3>
+
+      <p>
+        De officiële gebruikersnaam van Simply Henna op Instagram
+        en TikTok is <strong>@simplyhenna.nl</strong>.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="socials-cta">
+
+    <span class="socials-label">VOLGT U ONS AL?</span>
+
+    <h2>Tot op uw feed. 🌸📱</h2>
+
+    <p>
+      Volg Simply Henna en blijf op de hoogte van
+      designs, content en nieuwe updates.
+    </p>
+
+    <div class="socials-buttons">
+
+      <a class="socials-primary"
+         href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+        📸 Instagram
+      </a>
+
+      <a class="socials-secondary"
+         href="https://www.tiktok.com/@simplyhenna.nl"
+         target="_blank"
+         rel="noopener noreferrer">
+        🎵 TikTok
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
+
+
+
+
+
+
+
+
+
+  
 <section id="socials">
     <h1>📱 Onze socials</h1>
 
