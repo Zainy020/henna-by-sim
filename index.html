@@ -2226,13 +2226,656 @@
   }
 
 }
+    /* =========================
+   FAQ PAGE
+========================= */
+
+#faq {
+  max-width: 1200px;
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 20px 100px;
+}
+
+
+/* HERO */
+
+.faq-hero {
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 30px;
+  padding: 75px 55px;
+  box-shadow: 0 12px 40px rgba(102, 0, 51, 0.2);
+}
+
+.faq-label {
+  display: inline-block;
+  color: #ff2d8d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.faq-hero .faq-label {
+  color: #ffb3d9;
+}
+
+.faq-hero h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 10px 0 22px;
+  max-width: 850px;
+}
+
+.faq-hero p {
+  color: #ffe6f0;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.faq-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.faq-primary,
+.faq-secondary {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.faq-primary {
+  background: linear-gradient(135deg, #ff66aa, #ff2d8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 102, 170, 0.3);
+}
+
+.faq-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 102, 170, 0.45);
+}
+
+.faq-secondary {
+  background: white;
+  color: #cc0066;
+  border: 2px solid #ffb3d9;
+}
+
+.faq-secondary:hover {
+  background: #fff0f6;
+  transform: translateY(-3px);
+}
+
+
+/* INTRO */
+
+.faq-intro {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 35px;
+  margin: 100px 0;
+  align-items: stretch;
+}
+
+.faq-intro-text {
+  padding: 40px 20px;
+}
+
+.faq-intro-text h2 {
+  color: #660033;
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 5px 0 25px;
+}
+
+.faq-intro-text p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.faq-intro-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.faq-art-main {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.faq-intro-art strong {
+  color: #660033;
+  font-size: 27px;
+}
+
+.faq-intro-art p {
+  color: #6d3b53;
+  margin: 8px 0;
+}
+
+.faq-art-decoration {
+  position: absolute;
+  font-size: 35px;
+}
+
+.faq-art-one {
+  top: 40px;
+  left: 45px;
+  transform: rotate(-15deg);
+}
+
+.faq-art-two {
+  right: 45px;
+  bottom: 40px;
+  transform: rotate(12deg);
+}
+
+
+/* SECTION HEADING */
+
+.faq-section-heading {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.faq-section-heading h2 {
+  color: #660033;
+  font-size: 42px;
+  margin: 5px 0 17px;
+}
+
+.faq-section-heading p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* CATEGORIES */
+
+.faq-categories {
+  margin: 110px 0;
+}
+
+.faq-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.faq-category-card {
+  background: white;
+  border-radius: 25px;
+  padding: 28px;
+  text-decoration: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  border: 2px solid transparent;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.faq-category-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb3d9;
+  box-shadow: 0 14px 30px rgba(255, 102, 170, 0.18);
+}
+
+.faq-category-card > span {
+  font-size: 35px;
+}
+
+.faq-category-card h3 {
+  color: #660033;
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.faq-category-card p {
+  color: #8b6075;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* FAQ GROUPS */
+
+.faq-questions {
+  margin: 120px 0;
+}
+
+.faq-group {
+  max-width: 900px;
+  margin: 0 auto 100px;
+  scroll-margin-top: 100px;
+}
+
+.faq-group-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.faq-group-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.faq-mini-label {
+  color: #ff2d8d;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.faq-group-heading h2 {
+  color: #660033;
+  font-size: 32px;
+  margin: 5px 0 0;
+}
+
+
+/* FAQ ITEMS */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.faq-item:hover {
+  border-color: #ffe6f0;
+}
+
+.faq-item[open] {
+  border-color: #ffb3d9;
+  box-shadow: 0 10px 30px rgba(255, 102, 170, 0.13);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 25px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  color: #660033;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-plus {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  background: #fff0f6;
+  color: #ff2d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: normal;
+  transition: 0.25s;
+}
+
+.faq-item[open] .faq-plus {
+  transform: rotate(45deg);
+  background: #ff2d8d;
+  color: white;
+}
+
+.faq-answer {
+  padding: 0 28px 28px;
+  color: #6d3b53;
+}
+
+.faq-answer p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 15px;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer strong {
+  color: #660033;
+}
+
+.faq-answer a {
+  color: #ff2d8d;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+
+.faq-answer a:hover {
+  transform: translateX(5px);
+}
+
+
+/* IMPORTANT FAQ */
+
+.faq-important-item {
+  background: linear-gradient(135deg, #fff0f6, white);
+}
+
+.faq-answer-highlight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffe6f0;
+  padding: 18px 20px;
+  border-radius: 17px;
+  margin-bottom: 20px;
+}
+
+.faq-answer-highlight > span {
+  font-size: 25px;
+}
+
+.faq-answer-highlight p {
+  margin: 0;
+}
+
+
+/* CONTACT */
+
+.faq-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background: linear-gradient(135deg, #660033, #9b1857);
+  border-radius: 35px;
+  padding: 65px;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.faq-contact .faq-label {
+  color: #ffb3d9;
+}
+
+.faq-contact-text h2 {
+  color: white;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 5px 0 20px;
+}
+
+.faq-contact-text p {
+  color: #ffe6f0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.faq-contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-contact-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 23px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.faq-contact-card:hover {
+  transform: translateX(7px);
+}
+
+.faq-contact-card > span {
+  font-size: 30px;
+}
+
+.faq-contact-card div {
+  flex: 1;
+}
+
+.faq-contact-card strong {
+  color: #660033;
+  font-size: 17px;
+}
+
+.faq-contact-card p {
+  color: #8b6075;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.faq-contact-card b {
+  color: #ff2d8d;
+  font-size: 22px;
+}
+
+
+/* CTA */
+
+.faq-cta {
+  text-align: center;
+  padding: 75px 35px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+}
+
+.faq-cta h2 {
+  color: #660033;
+  font-size: 43px;
+  margin: 5px 0 17px;
+}
+
+.faq-cta p {
+  color: #6d3b53;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+.faq-cta .faq-buttons {
+  justify-content: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .faq-intro,
+  .faq-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #faq {
+    padding: 15px 10px 100px;
+  }
+
+  .faq-hero {
+    padding: 50px 25px;
+    border-radius: 22px;
+  }
+
+  .faq-hero h1 {
+    font-size: 38px;
+  }
+
+  .faq-hero p {
+    font-size: 16px;
+  }
+
+  .faq-buttons {
+    flex-direction: column;
+  }
+
+  .faq-primary,
+  .faq-secondary {
+    text-align: center;
+  }
+
+  .faq-intro,
+  .faq-categories,
+  .faq-questions,
+  .faq-contact {
+    margin: 70px 0;
+  }
+
+  .faq-intro-text {
+    padding: 10px 5px;
+  }
+
+  .faq-intro-text h2,
+  .faq-section-heading h2,
+  .faq-contact-text h2,
+  .faq-cta h2 {
+    font-size: 30px;
+  }
+
+  .faq-intro-art {
+    min-height: 280px;
+  }
+
+  .faq-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-category-card {
+    padding: 23px;
+  }
+
+  .faq-group {
+    margin-bottom: 70px;
+  }
+
+  .faq-group-heading {
+    align-items: flex-start;
+  }
+
+  .faq-group-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .faq-group-heading h2 {
+    font-size: 25px;
+  }
+
+  .faq-item summary {
+    padding: 22px;
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    padding: 0 22px 23px;
+  }
+
+  .faq-contact {
+    padding: 45px 25px;
+    border-radius: 25px;
+    gap: 35px;
+  }
+
+  .faq-cta {
+    padding: 55px 22px;
+    border-radius: 25px;
+  }
+
+}
   </style>
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 <body>
   <header>
     <div>🌸 Simply Henna is nu officieel online! Boek eenvoudig uw afspraak. | V3.20</div>
   </header>
 
+
+  
   <nav>
     <a onclick="openTab('home')">Home</a>
     <a onclick="openTab('designs')">Designs</a>
@@ -2246,6 +2889,15 @@
     <a onclick="openTab('medeweb')">medeweb</a>
     <a onclick="openTab('Algemenevoorwaarde')">AV</a>
   </nav>
+
+
+
+
+
+
+
+
+
   
 <section id="home" class="active">
 
@@ -2627,6 +3279,58 @@
   </div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 <section id="designs">
@@ -3370,57 +4074,779 @@
 </section>
 
 
-<section id="faq">
-    <h1>❓ Veelgestelde vragen</h1>
 
-    <details>
-        <summary>🌿 Is de henna natuurlijk?</summary>
-        <p>Ja! Wij gebruiken uitsluitend natuurlijke henna zonder schadelijke toevoegingen.</p>
-    </details>
 
-    <details>
-        <summary>⏳ Hoelang blijft de henna zitten?</summary>
-        <p>Gemiddeld blijft de henna 1 tot 3 weken zichtbaar, afhankelijk van je huidtype en de verzorging.</p>
-    </details>
 
-    <details>
-        <summary>💧 Hoe verzorg ik mijn henna?</summary>
-        <p>Vermijd water in de eerste 24 uur, gebruik eventueel natuurlijke olie en scrub de huid niet.</p>
-    </details>
 
-    <details>
-        <summary>📅 Hoe kan ik een afspraak maken?</summary>
-        <p>Via onze pagina 'Boek nu' of door ons een bericht te sturen via Instagram of TikTok.</p>
-    </details>
 
-    <details>
-        <summary>🎉 Komen jullie ook op locatie?</summary>
-        <p>Ja, voor evenementen, feestjes en bruiloften is dit mogelijk. Neem contact op voor de mogelijkheden.</p>
-    </details>
 
-    <details>
-        <summary>💳 Hoe kan ik betalen?</summary>
-        <p>Betalen kan contant of via een betaalverzoek. De beschikbare betaalmethoden spreken we vooraf af. U betaald natuurlijk achteraf.</p>
-    </details>
 
-  <a class="medeweb-btn"
-   href="https://www.instagram.com/simplyhenna.nl/"
-   target="_blank">
-    Staat uw vraag er niet tussen? stel 'm via instagram!
-</a>
 
-  <a class="medeweb-btn"
-   href="https://www.tiktok.com/@simplyhenna.nl"
-   target="_blank">
-    Staat uw vraag er niet tussen? stel 'm via tiktok!
-</a>
 
-<a class="medeweb-btn"
-   href="mailto:simplyhennamanagement@gmail.com">
-    Staat uw vraag er niet tussen? Stuur ons een e-mail! Dit kan op Simplyhennamanagement@gmail.com!
-</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+<section id="faq">
+
+  <!-- FAQ HERO -->
+  <div class="faq-hero">
+
+    <span class="faq-label">❓ VEELGESTELDE VRAGEN</span>
+
+    <h1>Een vraag?<br>Misschien staat het antwoord hier. 🌸</h1>
+
+    <p>
+      Alles over henna, boekingsaanvragen, afspraken en verzorging
+      op één plek. Zo weet u precies wat u kunt verwachten van Simply Henna.
+    </p>
+
+    <div class="faq-buttons">
+
+      <a class="faq-primary" href="#faq-vragen">
+        Bekijk de vragen ↓
+      </a>
+
+      <a class="faq-secondary" onclick="openTab('boek-nu')">
+        📅 Boekingsaanvraag indienen
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- INTRO -->
+  <div class="faq-intro">
+
+    <div class="faq-intro-text">
+
+      <span class="faq-label">SIMPLY UITGELEGD</span>
+
+      <h2>Wij houden het graag duidelijk. 🤎</h2>
+
+      <p>
+        Voor het eerst henna laten zetten? Een vraag over uw aanvraag?
+        Of benieuwd hoe u uw henna het beste kunt verzorgen?
+      </p>
+
+      <p>
+        Hieronder vindt u antwoorden op veelgestelde vragen over
+        Simply Henna en onze dienstverlening.
+      </p>
+
+    </div>
+
+
+    <div class="faq-intro-art">
+
+      <span class="faq-art-main">💬</span>
+
+      <span class="faq-art-decoration faq-art-one">🌸</span>
+      <span class="faq-art-decoration faq-art-two">✨</span>
+
+      <strong>Vraag maar raak.</strong>
+
+      <p>Simply Henna helpt u graag.</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- QUICK CATEGORIES -->
+  <div class="faq-categories">
+
+    <div class="faq-section-heading">
+
+      <span class="faq-label">WAAR GAAT UW VRAAG OVER?</span>
+
+      <h2>Vind snel uw antwoord.</h2>
+
+      <p>
+        Spring direct naar het onderwerp waar u meer over wilt weten.
+      </p>
+
+    </div>
+
+
+    <div class="faq-category-grid">
+
+      <a class="faq-category-card" href="#faq-henna">
+
+        <span>🌿</span>
+
+        <div>
+          <h3>Henna</h3>
+          <p>Over onze henna en het resultaat.</p>
+        </div>
+
+      </a>
+
+
+      <a class="faq-category-card" href="#faq-boeken">
+
+        <span>📅</span>
+
+        <div>
+          <h3>Boeken</h3>
+          <p>Over aanvragen en bevestigingen.</p>
+        </div>
+
+      </a>
+
+
+      <a class="faq-category-card" href="#faq-verzorging">
+
+        <span>✨</span>
+
+        <div>
+          <h3>Verzorging</h3>
+          <p>Tips voor uw henna.</p>
+        </div>
+
+      </a>
+
+
+      <a class="faq-category-card" href="#faq-betaling">
+
+        <span>💳</span>
+
+        <div>
+          <h3>Betaling & afspraken</h3>
+          <p>Praktische informatie.</p>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- FAQ QUESTIONS -->
+  <div class="faq-questions" id="faq-vragen">
+
+
+    <!-- HENNA -->
+    <div class="faq-group" id="faq-henna">
+
+      <div class="faq-group-heading">
+
+        <div class="faq-group-icon">🌿</div>
+
+        <div>
+          <span class="faq-mini-label">OVER DE HENNA</span>
+          <h2>Henna & designs</h2>
+        </div>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Is de henna natuurlijk?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Simply Henna gebruikt natuurlijke henna. Heeft u vooraf
+              een specifieke vraag over de gebruikte henna of ingrediënten?
+              Neem dan contact met ons op voordat de dienst wordt uitgevoerd.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Hoelang blijft henna zichtbaar?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Hoe lang henna zichtbaar blijft, kan per persoon verschillen.
+              Het resultaat wordt onder andere beïnvloed door de huid,
+              de plaats waar de henna is aangebracht en de verzorging.
+            </p>
+
+            <p>
+              Henna kan gemiddeld ongeveer één tot drie weken zichtbaar
+              blijven, maar dit is geen gegarandeerde termijn.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Kan ik zelf een design of voorbeeld doorgeven?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Ja. Heeft u een voorbeeld, bepaalde stijl of een eigen idee?
+              Geef uw wensen aan tijdens uw boekingsaanvraag of bij de
+              verdere afstemming van uw afspraak.
+            </p>
+
+            <p>
+              Een voorbeeld dient als inspiratie. Omdat henna met de hand
+              wordt aangebracht, kan het uiteindelijke resultaat verschillen
+              van een voorbeeld.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Ik weet nog niet welk design ik wil. Is dat erg?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Helemaal niet. U hoeft niet altijd met een volledig uitgewerkt
+              ontwerp te komen. Een stijl, sfeer of klein idee kan al helpen
+              bij het bespreken van uw wensen.
+            </p>
+
+            <a onclick="openTab('designs')">
+              Bekijk onze designs voor inspiratie →
+            </a>
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOEKEN -->
+    <div class="faq-group" id="faq-boeken">
+
+      <div class="faq-group-heading">
+
+        <div class="faq-group-icon">📅</div>
+
+        <div>
+          <span class="faq-mini-label">UW AANVRAAG</span>
+          <h2>Boeken & bevestiging</h2>
+        </div>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Hoe kan ik een afspraak aanvragen?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              U kunt via de pagina <strong>Boek nu</strong> ons online
+              boekingsformulier openen. Vul het formulier in en geef uw
+              wensen en voorkeursmoment door.
+            </p>
+
+            <a onclick="openTab('boek-nu')">
+              Ga naar Boek nu →
+            </a>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item faq-important-item">
+
+          <summary>
+            <span>Is mijn afspraak direct bevestigd nadat ik het formulier verstuur?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-highlight">
+
+              <span>💡</span>
+
+              <p>
+                <strong>Nee. Een boekingsaanvraag is niet automatisch
+                een bevestigde afspraak.</strong>
+              </p>
+
+            </div>
+
+            <p>
+              Simply Henna bekijkt uw aanvraag en de mogelijkheden.
+              Uw afspraak is pas definitief nadat Simply Henna deze
+              voldoende duidelijk heeft bevestigd.
+            </p>
+
+            <p>
+              Wacht daarom altijd op onze bevestiging voordat u ervan
+              uitgaat dat de afspraak definitief is.
+            </p>
+
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Is mijn gekozen datum of tijd gegarandeerd?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Nee. De datum en het tijdstip die u in het boekingsformulier
+              doorgeeft, gelden als uw voorkeur totdat Simply Henna deze
+              heeft bevestigd.
+            </p>
+
+            <p>
+              Wanneer het gewenste moment niet mogelijk is, kan Simply Henna
+              een andere datum of een ander tijdstip voorstellen.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Kan Simply Henna aanvullende vragen stellen over mijn aanvraag?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Ja. Soms hebben wij aanvullende informatie nodig om uw
+              boekingsaanvraag goed te kunnen beoordelen of uw wensen
+              verder af te stemmen.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Kan een boekingsaanvraag worden afgewezen?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Een boekingsaanvraag kan worden afgewezen wanneer uitvoering
+              redelijkerwijs niet mogelijk of niet verantwoord is.
+            </p>
+
+            <p>
+              Bij het bekijken van een aanvraag kan Simply Henna onder andere
+              rekening houden met beschikbaarheid, datum, tijdstip, locatie,
+              reistijd, het gewenste ontwerp en de benodigde tijd.
+            </p>
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+
+    <!-- VERZORGING -->
+    <div class="faq-group" id="faq-verzorging">
+
+      <div class="faq-group-heading">
+
+        <div class="faq-group-icon">✨</div>
+
+        <div>
+          <span class="faq-mini-label">NA UW AFSPRAAK</span>
+          <h2>Verzorging</h2>
+        </div>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Hoe verzorg ik mijn henna?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Volg de verzorgingsinstructies die Simply Henna u bij of
+              rond uw afspraak geeft. Goede nazorg kan invloed hebben
+              op de ontwikkeling en zichtbaarheid van de henna.
+            </p>
+
+            <p>
+              Vermijd onnodig wrijven of scrubben van de behandelde huid.
+              Heeft u een specifieke vraag over de nazorg? Vraag het gerust
+              aan de henna-artiest.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Waarom ziet de kleur er direct na het aanbrengen anders uit?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              De zichtbare kleur van henna kan zich na het verwijderen
+              van de hennapasta verder ontwikkelen. Het uiteindelijke
+              resultaat kan daarom anders ogen dan direct na de afspraak.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Is het resultaat bij iedereen precies hetzelfde?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Nee. Henna wordt met de hand aangebracht en het resultaat
+              kan per persoon verschillen. Ook huidkenmerken, verzorging
+              en andere omstandigheden kunnen invloed hebben op het resultaat.
+            </p>
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRAKTISCH -->
+    <div class="faq-group" id="faq-betaling">
+
+      <div class="faq-group-heading">
+
+        <div class="faq-group-icon">🤎</div>
+
+        <div>
+          <span class="faq-mini-label">PRAKTISCHE INFORMATIE</span>
+          <h2>Betaling & afspraken</h2>
+        </div>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Hoe kan ik betalen?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              De beschikbare betaalmethode wordt vooraf of rond de afspraak
+              met u afgestemd. Neem bij twijfel contact met Simply Henna op.
+            </p>
+
+            <a onclick="openTab('prijzen')">
+              Bekijk onze prijzen →
+            </a>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Komt Simply Henna ook op locatie?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Een dienst op locatie kan in bepaalde situaties mogelijk zijn,
+              bijvoorbeeld voor een evenement, feest of bijzondere gelegenheid.
+            </p>
+
+            <p>
+              Een locatiedienst is alleen van toepassing nadat Simply Henna
+              de mogelijkheden en de afspraak heeft bevestigd.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Kan ik henna aanvragen voor een bijzondere gelegenheid?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              Ja. Vermeld bij uw boekingsaanvraag dat het om een bijzondere
+              gelegenheid gaat en geef relevante informatie door.
+            </p>
+
+            <p>
+              Simply Henna bekijkt vervolgens de mogelijkheden en kan
+              contact met u opnemen voor verdere afstemming.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="faq-item">
+
+          <summary>
+            <span>Waar vind ik de Algemene Voorwaarden?</span>
+            <span class="faq-plus">+</span>
+          </summary>
+
+          <div class="faq-answer">
+            <p>
+              De Algemene Voorwaarden van Simply Henna zijn via onze
+              website beschikbaar.
+            </p>
+
+            <a onclick="openTab('Algemenevoorwaarde')">
+              Bekijk de Algemene Voorwaarden →
+            </a>
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- STILL HAVE QUESTION -->
+  <div class="faq-contact">
+
+    <div class="faq-contact-text">
+
+      <span class="faq-label">STAAT UW VRAAG ER NIET TUSSEN?</span>
+
+      <h2>Geen probleem. Vraag het ons. 💬</h2>
+
+      <p>
+        Heeft u nog een vraag over Simply Henna, uw boekingsaanvraag
+        of onze dienstverlening? Neem dan contact met ons op via
+        één van onze officiële kanalen.
+      </p>
+
+    </div>
+
+
+    <div class="faq-contact-options">
+
+      <a class="faq-contact-card"
+         href="https://www.instagram.com/simplyhenna.nl/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <span>📸</span>
+
+        <div>
+          <strong>Instagram</strong>
+          <p>Stuur ons een bericht</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+
+      <a class="faq-contact-card"
+         href="https://www.tiktok.com/@simplyhenna.nl"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <span>🎵</span>
+
+        <div>
+          <strong>TikTok</strong>
+          <p>Bekijk ons officiële account</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+
+      <a class="faq-contact-card"
+         href="mailto:simplyhennamanagement@gmail.com">
+
+        <span>✉️</span>
+
+        <div>
+          <strong>E-mail</strong>
+          <p>Neem contact op met het management</p>
+        </div>
+
+        <b>→</b>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <div class="faq-cta">
+
+    <span class="faq-label">ALLES DUIDELIJK?</span>
+
+    <h2>Dan is het tijd voor uw henna. 🌸</h2>
+
+    <p>
+      Dien eenvoudig uw boekingsaanvraag in en vertel
+      Simply Henna wat u in gedachten heeft.
+    </p>
+
+    <div class="faq-buttons">
+
+      <a class="faq-primary" onclick="openTab('boek-nu')">
+        📅 Ga naar Boek nu
+      </a>
+
+      <a class="faq-secondary" onclick="openTab('designs')">
+        Bekijk onze designs →
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 <section id="ons-team">
 <h1>ons team</h1>
